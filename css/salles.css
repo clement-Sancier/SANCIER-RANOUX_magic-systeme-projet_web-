@@ -59,7 +59,7 @@ header {
 }
 
 .logo-zone img {
-    width: 58px;
+    width: 100px;
     height: auto;
 }
 
@@ -78,6 +78,10 @@ nav {
 nav a {
     color: aliceblue;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: lightsteelblue;
 }
 
 .bouton-abonnement {
@@ -154,8 +158,6 @@ main {
 footer {
     text-align: center;
     padding: 30px 20px;
-    background: rgba(240, 248, 255, 0.95);
-    color: #0f2d52;
 }
 
 .footer-logo {
@@ -168,9 +170,18 @@ footer p {
     margin-bottom: 14px;
 }
 
+.footer-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
 footer a {
-    display: inline-block;
-    margin: 8px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #0f2d52;
     background: lightsteelblue;
@@ -188,10 +199,16 @@ footer a.footer-icon-link {
     width: 42px;
     height: 42px;
     object-fit: cover;
+    display: block;
 }
 
 .instagram-icon {
     border-radius: 8px;
+}
+
+.mail-icon {
+    width: 34px;
+    height: 34px;
 }
 
 @media (max-width: 900px) {
@@ -220,5 +237,9 @@ footer a.footer-icon-link {
 
     main {
         padding: 30px 15px 50px;
+    }
+
+    .footer-actions {
+        flex-direction: row;
     }
 }
