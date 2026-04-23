@@ -5,14 +5,14 @@
 }
 
 body {
-    background: linear-gradient(180deg, #f7f9fc 0%, #e8eef5 100%);
-    color: #0a1d37;
+    background: #0f2d52;
+    color: aliceblue;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(90deg, #f5f8fb 0%, #edf2f8 70%, #dde5ef 100%);
+    background:#0f2d52;
     color: #16385f;
     padding: 20px 30px;
     border-bottom: 1px solid #d6dee8;
@@ -44,7 +44,7 @@ header img {
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #16385f;
+    color: aliceblue;
 }
 
 h1,
@@ -70,7 +70,7 @@ nav {
 nav a {
     display: inline-block;
     text-decoration: none;
-    color: #5a6f88;
+    color: aliceblue;
     padding: 10px 4px;
     border-radius: 30px;
     font-weight: normal;
@@ -81,7 +81,7 @@ nav a {
 
 .bouton-abonnement {
     text-decoration: none;
-    background-color: #16385f;
+    background-color: aliceblue;
     color: white;
     padding: 12px 24px;
     border-radius: 30px;
@@ -107,7 +107,7 @@ main {
 }
 
 section {
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: aliceblue;
     border-radius: 18px;
     padding: 30px;
     margin-bottom: 30px;
@@ -115,12 +115,12 @@ section {
 }
 
 section h2 {
-    color: #07162b;
+    color: #0f2d52;
     margin-bottom: 12px;
 }
 
 section p {
-    color: #24364d;
+    color: #0f2d52;
 }
 
 article {
@@ -132,7 +132,7 @@ article {
 }
 
 article h3 {
-    color: #0d274d;
+    color: #0f2d52;
     margin-bottom: 12px;
 }
 
@@ -142,12 +142,12 @@ ul {
 
 li {
     margin-bottom: 8px;
-    color: #24364d;
+    color: #0f2d52;
 }
 
 footer {
-    background-color: #9fb4cc;
-    color: white;
+    background-color: aliceblue;
+    color: #0f2d52;
     text-align: center;
     padding: 30px 20px;
     border-top: 1px solid #c7d4e2;
@@ -167,12 +167,12 @@ footer p {
 footer a {
     display: inline-block;
     margin: 8px 10px;
-    color: white;
+    color: #0f2d52;
     text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid lightsteelblue;
     padding: 10px 16px;
     border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.06);
+    background-color: lightsteelblue;
 }
 
 footer a:hover,
@@ -225,5 +225,9 @@ nav a:hover,
 }
 
 
-
+.btn-sous-image{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: aliceblue;
+}
 
