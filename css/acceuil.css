@@ -82,7 +82,7 @@ nav a {
 .bouton-abonnement {
     text-decoration: none;
     background-color: aliceblue;
-    color: white;
+    color:#0f2d52;
     padding: 12px 24px;
     border-radius: 30px;
     font-weight: bold;
@@ -115,7 +115,7 @@ section {
 }
 
 section h2 {
-    color: #0f2d52;
+    color: aliceblue;
     margin-bottom: 12px;
 }
 
