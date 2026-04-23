@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(180deg, #f7f9fc 0%, #e8eef5 100%);
+    color: #0a1d37;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #f5f8fb 0%, #edf2f8 70%, #dde5ef 100%);
+    color: #16385f;
+    padding: 20px 30px;
+    border-bottom: 1px solid #d6dee8;
+}
+
+.haut-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo-zone {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 220px;
+}
+
+header img {
+    width: 58px;
+    height: auto;
+}
+
+.logo-zone span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #16385f;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 6px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    flex: 1;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #5a6f88;
+    padding: 10px 4px;
+    border-radius: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+}
+
+.bouton-abonnement {
+    text-decoration: none;
+    background-color: #16385f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    min-width: 150px;
+    text-align: center;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 45px 30px;
+}
+
+.hero p {
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 30px rgba(23, 55, 94, 0.12);
+}
+
+section h2 {
+    color: #07162b;
+    margin-bottom: 12px;
+}
+
+section p {
+    color: #24364d;
+}
+
+article {
+    border: 1px solid #d6e0ea;
+    border-radius: 14px;
+    padding: 22px;
+    margin-top: 20px;
+    background-color: #f9fbfd;
+}
+
+article h3 {
+    color: #0d274d;
+    margin-bottom: 12px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #24364d;
+}
+
+footer {
+    background-color: #9fb4cc;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #c7d4e2;
+}
+
+footer img {
+    width: 85px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+footer a {
+    display: inline-block;
+    margin: 8px 10px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px 16px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+footer a:hover,
+nav a:hover,
+.bouton-abonnement:hover {
+    opacity: 0.88;
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    .haut-page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-zone {
+        min-width: auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .bouton-abonnement {
+        min-width: auto;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    section {
+        padding: 22px;
+    }
+
+    footer a {
+        display: block;
+        margin: 10px auto;
+        max-width: 220px;
+    }
+}
+
+
+
+
