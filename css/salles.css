@@ -22,7 +22,7 @@ body {
     background-image: url("../image/salle.png");
     background-size: cover;
     background-position: center;
-    opacity: 0.12;
+    opacity: 0.1;
     z-index: 0;
 }
 
@@ -38,7 +38,7 @@ header {
 }
 
 .haut-page {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -94,20 +94,21 @@ nav a:hover {
 }
 
 main {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 40px 20px 60px;
+    padding: 30px 20px 60px;
 }
 
 .hero {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
 }
 
 .hero-label {
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    color: #c9d9ef;
 }
 
 .hero h1 {
@@ -117,42 +118,115 @@ main {
 }
 
 .hero p {
-    max-width: 700px;
+    max-width: 720px;
     margin: 0 auto;
+    color: rgba(240, 248, 255, 0.86);
 }
 
-.grille-salles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.recherche-section {
+    margin-bottom: 34px;
 }
 
-.carte-salle {
-    background: rgba(240, 248, 255, 0.92);
-    color: #0f2d52;
-    padding: 24px;
+.search-panel {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 8px;
+    background: rgba(255, 255, 255, 0.07);
+    text-align: center;
 }
 
-.ville {
-    text-transform: uppercase;
-    font-size: 0.85rem;
+.search-label {
+    display: block;
+    margin-bottom: 12px;
     font-weight: bold;
-    margin-bottom: 8px;
 }
 
-.carte-salle h2 {
+.search-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #111412;
+    background: #f2f4f3;
+}
+
+.search-result {
+    margin-top: 12px;
+    color: #d8e5f7;
+}
+
+.liste-clubs {
+    display: grid;
+    gap: 28px;
+}
+
+.club-item {
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 26px;
+    align-items: center;
+    padding: 0 0 28px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.club-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.club-content h2 {
     font-family: Georgia, "Times New Roman", serif;
-    margin-bottom: 14px;
-    font-size: 1.5rem;
-}
-
-.carte-salle ul {
-    padding-left: 18px;
-}
-
-.carte-salle li {
+    font-size: 2.2rem;
     margin-bottom: 8px;
+    color: white;
+}
+
+.club-ville {
+    margin-bottom: 6px;
+    font-size: 0.86rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #c9d9ef;
+}
+
+.club-adresse {
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+    color: #d0d4d2;
+}
+
+.club-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn-inscription {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-inscription {
+    background: #16385f;
+    color: white;
+}
+
+.no-result {
+    margin-top: 24px;
+    text-align: center;
+    font-weight: bold;
+    color: aliceblue;
 }
 
 footer {
@@ -211,9 +285,14 @@ footer a.footer-icon-link {
     height: 34px;
 }
 
-@media (max-width: 900px) {
-    .grille-salles {
+@media (max-width: 800px) {
+    .club-item {
         grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .club-image {
+        max-width: 240px;
     }
 }
 
@@ -235,11 +314,16 @@ footer a.footer-icon-link {
         font-size: 2.2rem;
     }
 
+    .club-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .club-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
     main {
         padding: 30px 15px 50px;
-    }g
-
-    .footer-actions {
-        flex-direction: row;
     }
 }
