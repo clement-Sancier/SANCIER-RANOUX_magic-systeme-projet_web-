@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic System - Inscription</title>
+    <link rel="stylesheet" href="../css/inscription.css">
+</head>
+<body class="page-inscription">
+    <div class="background-image"></div>
+
+    <header>
+        <div class="haut-page">
+            <a class="logo-link" href="acceuil.html" aria-label="Retour a l'accueil">
+                <div class="logo-zone">
+                    <img src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
+                    <span>MAGIC SYSTEM</span>
+                </div>
+            </a>
+            <nav>
+                <a href="acceuil.html">Accueil</a>
+                <a href="equipements.html">Equipements</a>
+                <a href="salles.html">Salles</a>
+                <a href="abonnements.html">Abonnements</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="inscription-box">
+            <p class="section-label">Inscription</p>
+            <h1>Rejoins Magic System</h1>
+            <p class="intro">
+                Remplis ce formulaire pour demander ton inscription dans le club de ton choix.
+            </p>
+
+            <form class="formulaire-inscription">
+                <label for="club">Club choisi</label>
+                <input id="club" name="club" type="text" placeholder="Exemple : Magic System Amiens">
+
+                <label for="nom">Nom complet</label>
+                <input id="nom" name="nom" type="text" placeholder="Ton nom">
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="tonmail@email.com">
+
+                <label for="telephone">Telephone</label>
+                <input id="telephone" name="telephone" type="tel" placeholder="06 00 00 00 00">
+
+                <label for="abonnement">Abonnement souhaite</label>
+                <select id="abonnement" name="abonnement">
+                    <option value="">Choisir une formule</option>
+                    <option>Starter</option>
+                    <option>Standard</option>
+                    <option>Elite</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Dis-nous si tu veux etre recontacte rapidement ou visiter une salle."></textarea>
+
+                <button type="submit">Envoyer ma demande</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footer-logo" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
+        <p>by Clement Sancier et Milo Ranoux</p>
+        <div class="footer-actions">
+            <a href="contact.html">En savoir plus</a>
+            <a class="footer-icon-link" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
+                <img class="instagram-icon" src="../image/instagramlogo.png" alt="Instagram">
+            </a>
+            <a class="footer-icon-link" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
+                <img class="mail-icon" src="../image/maillogo.png" alt="Mail">
+            </a>
+        </div>
+    </footer>
+
+    <script src="../js/inscription.js"></script>
+</body>
+</html>

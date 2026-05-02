@@ -3,58 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAGIC SYSTEM</title>
+    <title>Magic System - Accueil</title>
     <link rel="stylesheet" href="../css/acceuil.css">
 </head>
-<body>
-<header>
-    <div class="haut-page">
-        <div class="logo-zone">
-            <img src="../.idea/image/logo.png" alt="Logo de la salle Magic Systeme">
-            <span>MAGIC SYSTEM</span>
+<body class="page-acceuil">
+    <div class="background-image"></div>
+
+    <header>
+        <div class="haut-page">
+            <a class="logo-link" href="acceuil.html" aria-label="Retour a l'accueil">
+                <div class="logo-zone">
+                    <img src="../image/logoMS.png" alt="Logo de la salle Magic System">
+                    <span>MAGIC SYSTEM</span>
+                </div>
+            </a>
+            <nav>
+                <a href="acceuil.html">Accueil</a>
+                <a href="equipements.html">Equipements</a>
+                <a href="salles.html">Salles</a>
+                <a href="abonnements.html">Abonnements</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <a class="bouton-abonnement" href="abonnements.html">S'abonner</a>
         </div>
-        <nav>
-            <a href="acceuil.html">Accueil</a>
-            <a href="equipements.html">Equipements</a>
-            <a href="salles.html">Salles</a>
-            <a href="abonnements.html">Abonnements</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <a class="bouton-abonnement" href="abonnements.html">S'abonner</a>
-    </div>
-</header>
+    </header>
 
     <main>
         <section class="hero">
             <p class="hero-label">Accueil</p>
             <h1>Magic Systeme</h1>
-            <p>bougeons au rythme du sport</p>
+            <p>
+                Bougeons au rythme du sport avec une salle simple, motivee
+                et accessible a tous les niveaux.
+            </p>
+            <div class="hero-actions">
+                <a class="btn-principal" href="abonnements.html">S'abonner</a>
+                <a class="btn-secondaire" href="salles.html">Voir les salles</a>
+            </div>
         </section>
 
-<section class="grosse-image">
-    <div class="txt-sur-image">
-        <h1>MAGIC SYSTEME</h1>
-        <h2>Bougeons au rythme du sport</h2>
+        <section class="page-section">
+            <div class="grille-accueil">
+                <article class="bloc-accueil">
+                    <h2>3 salles</h2>
+                    <p>Paris, Bordeaux et Perigueux pour trouver le club qui te correspond.</p>
+                </article>
 
-        <div class="hero-buttons">
-            <a href="./abonnements.html" class="btn-sur-image">S'abonner</a>
-            <a href="./salles.html" class="btn-sur-image">Trouver ma salle</a>
+                <article class="bloc-accueil">
+                    <h2>Cardio et musculation</h2>
+                    <p>Des espaces simples a comprendre pour s'entrainer efficacement.</p>
+                </article>
+
+                <article class="bloc-accueil">
+                    <h2>Ambiance motivee</h2>
+                    <p>Un univers bleu, propre et dynamique pour garder le rythme toute l'annee.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <img class="footer-logo" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
+        <p>by Clement Sancier et Milo Ranoux</p>
+        <div class="footer-actions">
+            <a href="contact.html">En savoir plus</a>
+            <a class="footer-icon-link" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
+                <img class="instagram-icon" src="../image/instagramlogo.png" alt="Instagram">
+            </a>
+            <a class="footer-icon-link" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
+                <img class="mail-icon" src="../image/maillogo.png" alt="Mail">
+            </a>
         </div>
-    </div>
-</section>
-
-
-
-
-
-
-<footer id="contact">
-    <img src="../.idea/image/logo.png" alt="Logo de la salle Magic Systeme">
-    <p>by Clement Sancier et Milo Ranoux</p>
-    <a href="contact.html">En savoir plus</a>
-    <a href="https://instagram.com/" target="_blank">Instagram</a>
-    <a href="mailto:contact@magicsysteme.fr">Mail</a>
-</footer>
-
+    </footer>
 </body>
 </html>
