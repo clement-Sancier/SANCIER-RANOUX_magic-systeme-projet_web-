@@ -50,6 +50,9 @@ header {
 }
 
 .logo-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px 6px 0;
     text-decoration: none;
     color: inherit;
 }
@@ -61,7 +64,7 @@ header {
 }
 
 .logo-zone img {
-    width: 100px;
+    width: 126px;
     height: auto;
 }
 
