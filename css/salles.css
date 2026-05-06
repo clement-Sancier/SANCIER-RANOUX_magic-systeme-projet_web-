@@ -106,28 +106,30 @@ main {
     padding: 30px 20px 60px;
 }
 
-.hero {
+.page-header {
+    margin-bottom: 34px;
     text-align: center;
-    margin-bottom: 26px;
 }
 
-.hero-label {
-    font-family: "Anton", Arial, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.section-label {
     margin-bottom: 10px;
+    font-family: "Anton", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: #98cfff;
 }
 
-.hero h1 {
+.page-header h1 {
+    margin-bottom: 12px;
     font-family: "Anton", Arial, sans-serif;
     font-size: 3rem;
     font-weight: normal;
-    margin-bottom: 12px;
     letter-spacing: 0.5px;
 }
 
-.hero p {
+.page-header p {
     max-width: 720px;
     margin: 0 auto;
     color: rgba(233, 244, 255, 0.9);
@@ -138,109 +140,140 @@ main {
 }
 
 .search-panel {
-    max-width: 760px;
+    max-width: 1120px;
     margin: 0 auto;
-    padding: 22px;
-    border: 1px solid rgba(143, 211, 255, 0.2);
+    padding: 36px 28px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
-    background: rgba(11, 31, 56, 0.5);
+    background: rgba(248, 251, 255, 0.92);
     text-align: center;
 }
 
 .search-label {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
     font-family: "Anton", Arial, sans-serif;
     font-weight: normal;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #111827;
+}
+
+.search-controls {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 170px;
+    gap: 10px;
+    max-width: 760px;
+    margin: 0 auto;
 }
 
 .search-input {
     width: 100%;
     padding: 14px 16px;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid rgba(17, 24, 39, 0.25);
+    border-radius: 0;
     font-size: 1rem;
-    color: #0c2745;
-    background: #eef7ff;
+    color: #111827;
+    background: white;
+}
+
+.search-button {
+    min-height: 52px;
+    border: none;
+    border-radius: 0;
+    background: #05070b;
+    color: white;
+    font-family: "Anton", Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
 }
 
 .search-result {
     margin-top: 12px;
-    color: #b7dfff;
+    color: #44546a;
 }
 
 .liste-clubs {
     display: grid;
-    gap: 28px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
 }
 
 .club-item {
     display: grid;
-    grid-template-columns: 190px minmax(0, 1fr);
-    gap: 26px;
-    align-items: center;
-    padding: 0 0 28px;
-    border-bottom: 1px solid rgba(167, 207, 247, 0.18);
+    grid-template-columns: 1fr;
+    gap: 0;
+    align-items: start;
+    padding: 14px 14px 18px;
+    border: 1px solid rgba(206, 223, 240, 0.85);
+    border-radius: 0;
+    background: rgba(249, 252, 255, 0.96);
 }
 
 .club-image {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 4px;
+    border: 1px solid rgba(206, 223, 240, 0.95);
+    margin-bottom: 16px;
+}
+
+.club-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
 }
 
 .club-content h2 {
     font-family: "Anton", Arial, sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: normal;
-    margin-bottom: 8px;
-    color: #ffffff;
-    letter-spacing: 0.4px;
+    margin-bottom: 14px;
+    color: #111827;
+    letter-spacing: 0.2px;
+    line-height: 1.1;
 }
 
 .club-ville {
-    margin-bottom: 6px;
-    font-size: 0.86rem;
-    font-family: "Anton", Arial, sans-serif;
-    font-weight: normal;
-    letter-spacing: 1px;
-    color: #90d0ff;
+    display: none;
 }
 
 .club-adresse {
-    margin-bottom: 16px;
-    font-size: 1.05rem;
-    color: #d9eaff;
+    min-height: 72px;
+    margin-bottom: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(17, 24, 39, 0.18);
+    font-size: 0.98rem;
+    color: #5b6677;
 }
 
 .club-actions {
     display: flex;
-    gap: 12px;
-    flex-wrap: wrap;
+    margin-top: auto;
 }
 
 .btn-inscription {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 48px;
+    width: 100%;
+    min-height: 50px;
     padding: 0 18px;
-    border-radius: 6px;
+    border: 1px solid rgba(17, 24, 39, 0.28);
+    border-radius: 0;
     text-decoration: none;
     font-family: "Anton", Arial, sans-serif;
     font-weight: normal;
     letter-spacing: 0.5px;
-}
-
-.btn-inscription {
-    background: #2f7dd1;
-    color: white;
+    background: white;
+    color: #111827;
 }
 
 .btn-inscription:hover {
-    background: #3a8de6;
+    background: #eff4f8;
 }
 
 .no-result {
@@ -309,13 +342,17 @@ footer a.footer-icon-link {
 }
 
 @media (max-width: 800px) {
+    .liste-clubs {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .search-controls {
+        grid-template-columns: 1fr;
+    }
+
     .club-item {
         grid-template-columns: 1fr;
         align-items: start;
-    }
-
-    .club-image {
-        max-width: 240px;
     }
 }
 
@@ -333,25 +370,28 @@ footer a.footer-icon-link {
         justify-content: center;
     }
 
-    .hero h1 {
+    .page-header h1 {
         font-size: 2.2rem;
     }
 
-    .club-content h2 {
-        font-size: 1.8rem;
+    .search-panel {
+        padding: 24px 16px;
     }
 
-    .club-actions {
-        flex-direction: column;
-        align-items: stretch;
+    .search-label {
+        font-size: 1.3rem;
     }
 
     main {
         padding: 30px 15px 50px;
     }
+
+    .liste-clubs {
+        grid-template-columns: 1fr;
+    }
 }
 
-.page-abonnements .hero {
+.page-abonnements .page-header {
     margin-bottom: 34px;
 }
 
@@ -369,37 +409,6 @@ footer a.footer-icon-link {
     color: #15375d;
     border: 1px solid rgba(185, 209, 236, 0.75);
     box-shadow: 0 12px 24px rgba(4, 17, 34, 0.12);
-}
-
-.page-abonnements .offre-card-featured {
-    border: 2px solid #4f95ea;
-    box-shadow: 0 14px 28px rgba(7, 29, 56, 0.16);
-}
-
-.page-abonnements .offre-badge {
-    display: inline-flex;
-    align-items: center;
-    min-height: 28px;
-    padding: 0 14px;
-    border-radius: 999px;
-    margin-bottom: 16px;
-    font-size: 0.85rem;
-    font-weight: bold;
-}
-
-.page-abonnements .offre-badge-starter {
-    background: #e4f2d8;
-    color: #4d7a2f;
-}
-
-.page-abonnements .offre-badge-standard {
-    background: #dceaff;
-    color: #396fb8;
-}
-
-.page-abonnements .offre-badge-premium {
-    background: #f4ebd8;
-    color: #8b6a1f;
 }
 
 .page-abonnements .offre-card h2 {
@@ -489,11 +498,6 @@ footer a.footer-icon-link {
     font-family: "Anton", Arial, sans-serif;
     font-weight: normal;
     letter-spacing: 0.4px;
-}
-
-.page-abonnements .offre-btn-featured {
-    border-color: #4f95ea;
-    background: #edf5ff;
 }
 
 .page-abonnements .offre-note {

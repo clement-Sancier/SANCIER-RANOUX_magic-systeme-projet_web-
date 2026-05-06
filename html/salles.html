@@ -29,25 +29,19 @@
     </header>
 
     <main>
-        <section class="hero">
-            <p class="hero-label">Nos clubs</p>
-            <h1>Trouve la salle qui te correspond</h1>
-            <p>
-                Recherche par ville ou par code postal, puis inscris-toi directement
-                au club qui t'interesse.
-            </p>
-        </section>
-
         <section class="recherche-section">
             <div class="search-panel">
-                <label class="search-label" for="recherche-salle">Ville ou code postal</label>
-                <input
-                    id="recherche-salle"
-                    class="search-input"
-                    type="search"
-                    placeholder="Exemple : Amiens ou 80080"
-                    aria-describedby="resultat-recherche"
-                >
+                <label class="search-label" for="recherche-salle">Rechercher une salle</label>
+                <div class="search-controls">
+                    <input
+                        id="recherche-salle"
+                        class="search-input"
+                        type="search"
+                        placeholder="Ville, code postal..."
+                        aria-describedby="resultat-recherche"
+                    >
+                    <button id="search-button" class="search-button" type="button">Chercher</button>
+                </div>
                 <p id="resultat-recherche" class="search-result">13 salles disponibles</p>
             </div>
         </section>

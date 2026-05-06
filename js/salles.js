@@ -1,4 +1,5 @@
 const searchInput = document.getElementById("recherche-salle");
+const searchButton = document.getElementById("search-button");
 const cards = Array.from(document.querySelectorAll(".club-item"));
 const resultText = document.getElementById("resultat-recherche");
 const noResult = document.getElementById("aucun-resultat");
@@ -37,4 +38,9 @@ function updateResults() {
 }
 
 searchInput.addEventListener("input", updateResults);
+
+if (searchButton) {
+    searchButton.addEventListener("click", updateResults);
+}
+
 updateResults();
