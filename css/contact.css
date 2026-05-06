@@ -1,0 +1,123 @@
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.contact-card {
+    overflow: hidden;
+    border: 1px solid rgba(206, 223, 240, 0.85);
+    border-radius: 10px;
+    background: rgba(249, 252, 255, 0.96);
+    box-shadow: 0 12px 24px rgba(4, 17, 34, 0.12);
+}
+
+.contact-photo {
+    position: relative;
+    min-height: 240px;
+    background-image: linear-gradient(rgba(8, 26, 51, 0.22), rgba(8, 26, 51, 0.42)), url("../image/salle.png");
+    background-size: cover;
+}
+
+.contact-photo-clement {
+    background-position: center 35%;
+}
+
+.contact-photo-milo {
+    background-position: center 60%;
+}
+
+.contact-badge {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 74px;
+    height: 74px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    background: rgba(7, 23, 43, 0.72);
+    color: white;
+    font-family: "Anton", Arial, sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.contact-body {
+    padding: 24px;
+    color: #173554;
+}
+
+.contact-body h2 {
+    margin-bottom: 6px;
+    font-family: "Anton", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: normal;
+    color: #102b4d;
+    letter-spacing: 0.3px;
+}
+
+.contact-subtitle {
+    margin-bottom: 18px;
+    color: #5c7390;
+}
+
+.contact-fields {
+    display: grid;
+    gap: 12px;
+}
+
+.contact-field {
+    padding: 14px 16px;
+    border: 1px solid rgba(19, 47, 82, 0.12);
+    border-radius: 8px;
+    background: white;
+}
+
+.contact-field-label {
+    display: block;
+    margin-bottom: 4px;
+    font-family: "Anton", Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    color: #6483a8;
+}
+
+.contact-field p {
+    color: #1a3452;
+}
+
+.contact-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 0 18px;
+    border-radius: 999px;
+    background: #16385f;
+    color: white;
+    text-decoration: none;
+    font-family: "Anton", Arial, sans-serif;
+    letter-spacing: 0.4px;
+}
+
+.contact-link-secondary {
+    background: #d9ecff;
+    color: #102b4d;
+}
+
+@media (max-width: 800px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
