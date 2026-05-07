@@ -12,20 +12,14 @@ body {
 }
 
 .page-salles {
-    background: linear-gradient(180deg, #081a33 0%, #102b4d 55%, #14365d 100%);
+    background: #0b1f38;
     color: aliceblue;
     position: relative;
     min-height: 100vh;
 }
 
-.background-image {
-    position: fixed;
-    inset: 0;
-    background-image: url("../image/salle.png");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.1;
-    z-index: 0;
+.image-fond {
+    display: none;
 }
 
 header,
@@ -58,7 +52,7 @@ header::after {
     flex-wrap: wrap;
 }
 
-.logo-link {
+.lien-logo {
     display: inline-flex;
     align-items: center;
     padding: 6px 10px 6px 0;
@@ -66,18 +60,18 @@ header::after {
     color: inherit;
 }
 
-.logo-zone {
+.zone-logo {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.logo-zone img {
+.zone-logo img {
     width: 126px;
     height: auto;
 }
 
-.logo-zone span {
+.zone-logo span {
     font-family: "Anton", Arial, sans-serif;
     font-size: 1.4rem;
     letter-spacing: 1px;
@@ -118,12 +112,12 @@ main {
     padding: 30px 20px 60px;
 }
 
-.page-header {
+.entete-page {
     margin-bottom: 34px;
     text-align: center;
 }
 
-.section-label {
+.etiquette-section {
     margin-bottom: 10px;
     font-family: "Anton", Arial, sans-serif;
     font-size: 1rem;
@@ -133,7 +127,7 @@ main {
     color: #98cfff;
 }
 
-.page-header h1 {
+.entete-page h1 {
     margin-bottom: 12px;
     font-family: "Anton", Arial, sans-serif;
     font-size: 3rem;
@@ -141,7 +135,7 @@ main {
     letter-spacing: 0.5px;
 }
 
-.page-header p {
+.entete-page p {
     max-width: 720px;
     margin: 0 auto;
     color: rgba(233, 244, 255, 0.9);
@@ -151,7 +145,7 @@ main {
     margin-bottom: 34px;
 }
 
-.search-panel {
+.panneau-recherche {
     max-width: 1120px;
     margin: 0 auto;
     padding: 36px 28px 28px;
@@ -161,7 +155,7 @@ main {
     text-align: center;
 }
 
-.search-label {
+.etiquette-recherche {
     display: block;
     margin-bottom: 18px;
     font-family: "Anton", Arial, sans-serif;
@@ -172,7 +166,7 @@ main {
     color: #111827;
 }
 
-.search-controls {
+.controles-recherche {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 170px;
     gap: 10px;
@@ -180,7 +174,7 @@ main {
     margin: 0 auto;
 }
 
-.search-input {
+.champ-recherche {
     width: 100%;
     padding: 14px 16px;
     border: 1px solid rgba(17, 24, 39, 0.25);
@@ -190,7 +184,7 @@ main {
     background: white;
 }
 
-.search-button {
+.bouton-recherche {
     min-height: 52px;
     border: none;
     border-radius: 0;
@@ -202,7 +196,7 @@ main {
     cursor: pointer;
 }
 
-.search-result {
+.texte-resultat-recherche {
     margin-top: 12px;
     color: #44546a;
 }
@@ -213,7 +207,7 @@ main {
     gap: 22px;
 }
 
-.club-item {
+.carte-salle {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0;
@@ -224,7 +218,7 @@ main {
     background: rgba(249, 252, 255, 0.96);
 }
 
-.club-image {
+.image-salle {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
@@ -232,14 +226,14 @@ main {
     margin-bottom: 16px;
 }
 
-.club-content {
+.contenu-salle {
     display: flex;
     flex-direction: column;
     height: 100%;
     text-align: center;
 }
 
-.club-content h2 {
+.contenu-salle h2 {
     font-family: "Anton", Arial, sans-serif;
     font-size: 1.8rem;
     font-weight: normal;
@@ -249,11 +243,11 @@ main {
     line-height: 1.1;
 }
 
-.club-ville {
+.ville-salle {
     display: none;
 }
 
-.club-adresse {
+.adresse-salle {
     min-height: 72px;
     margin-bottom: 20px;
     padding-top: 16px;
@@ -262,12 +256,12 @@ main {
     color: #5b6677;
 }
 
-.club-actions {
+.actions-salle {
     display: flex;
     margin-top: auto;
 }
 
-.btn-inscription {
+.bouton-inscription {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -284,11 +278,11 @@ main {
     color: #111827;
 }
 
-.btn-inscription:hover {
+.bouton-inscription:hover {
     background: #eff4f8;
 }
 
-.no-result {
+.texte-aucun-resultat {
     margin-top: 24px;
     text-align: center;
     font-weight: bold;
@@ -300,7 +294,7 @@ footer {
     padding: 30px 20px;
 }
 
-.footer-logo {
+.logo-pied-page {
     width: 85px;
     height: auto;
     margin-bottom: 12px;
@@ -310,7 +304,7 @@ footer p {
     margin-bottom: 14px;
 }
 
-.footer-actions {
+.actions-pied-page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,24 +325,24 @@ footer a {
     letter-spacing: 0.4px;
 }
 
-footer a.footer-icon-link {
+footer a.lien-icone-pied-page {
     background: transparent;
     padding: 0;
 }
 
-.instagram-icon,
-.mail-icon {
+.icone-instagram,
+.icone-mail {
     width: 42px;
     height: 42px;
     object-fit: cover;
     display: block;
 }
 
-.instagram-icon {
+.icone-instagram {
     border-radius: 8px;
 }
 
-.mail-icon {
+.icone-mail {
     width: 34px;
     height: 34px;
 }
@@ -358,11 +352,11 @@ footer a.footer-icon-link {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .search-controls {
+    .controles-recherche {
         grid-template-columns: 1fr;
     }
 
-    .club-item {
+    .carte-salle {
         grid-template-columns: 1fr;
         align-items: start;
     }
@@ -382,15 +376,15 @@ footer a.footer-icon-link {
         justify-content: center;
     }
 
-    .page-header h1 {
+    .entete-page h1 {
         font-size: 2.2rem;
     }
 
-    .search-panel {
+    .panneau-recherche {
         padding: 24px 16px;
     }
 
-    .search-label {
+    .etiquette-recherche {
         font-size: 1.3rem;
     }
 
@@ -403,18 +397,18 @@ footer a.footer-icon-link {
     }
 }
 
-.page-abonnements .page-header {
+.page-abonnements .entete-page {
     margin-bottom: 34px;
 }
 
-.page-abonnements .abonnements-grid {
+.page-abonnements .grille-abonnements {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
     align-items: start;
 }
 
-.page-abonnements .offre-card {
+.page-abonnements .carte-offre {
     padding: 24px;
     border-radius: 10px;
     background: rgba(239, 247, 255, 0.97);
@@ -423,7 +417,7 @@ footer a.footer-icon-link {
     box-shadow: 0 12px 24px rgba(4, 17, 34, 0.12);
 }
 
-.page-abonnements .offre-card h2 {
+.page-abonnements .carte-offre h2 {
     font-family: "Anton", Arial, sans-serif;
     font-size: 1.85rem;
     font-weight: normal;
@@ -432,7 +426,7 @@ footer a.footer-icon-link {
     letter-spacing: 0.4px;
 }
 
-.page-abonnements .offre-intro {
+.page-abonnements .intro-offre {
     min-height: 84px;
     margin-bottom: 18px;
     color: #4f647d;
@@ -480,23 +474,23 @@ footer a.footer-icon-link {
     font-weight: bold;
 }
 
-.page-abonnements .offre-liste li.included::before {
+.page-abonnements .offre-liste li.inclus::before {
     content: "+";
     color: #437c33;
     background: #e4f2d8;
 }
 
-.page-abonnements .offre-liste li.excluded {
+.page-abonnements .offre-liste li.exclus {
     color: #7a8794;
 }
 
-.page-abonnements .offre-liste li.excluded::before {
+.page-abonnements .offre-liste li.exclus::before {
     content: "-";
     color: #7a8794;
     background: #eff2f5;
 }
 
-.page-abonnements .offre-btn {
+.page-abonnements .bouton-offre {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -520,11 +514,11 @@ footer a.footer-icon-link {
 }
 
 @media (max-width: 980px) {
-    .page-abonnements .abonnements-grid {
+    .page-abonnements .grille-abonnements {
         grid-template-columns: 1fr;
     }
 
-    .page-abonnements .offre-intro {
+    .page-abonnements .intro-offre {
         min-height: auto;
     }
 }

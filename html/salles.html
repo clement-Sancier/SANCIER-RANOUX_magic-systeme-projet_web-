@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/salles.css">
 </head>
 <body class="page-salles">
-    <div class="background-image"></div>
+    <div class="image-fond"></div>
 
     <header>
         <div class="haut-page">
-            <a class="logo-link" href="acceuil.html" aria-label="Retour a l'accueil">
-                <div class="logo-zone">
+            <a class="lien-logo" href="acceuil.html" aria-label="Retour a l'accueil">
+                <div class="zone-logo">
                     <img src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
                     <span>MAGIC SYSTEM</span>
                 </div>
@@ -30,197 +30,197 @@
 
     <main>
         <section class="recherche-section">
-            <div class="search-panel">
-                <label class="search-label" for="recherche-salle">Rechercher une salle</label>
-                <div class="search-controls">
+            <div class="panneau-recherche">
+                <label class="etiquette-recherche" for="recherche-salle">Rechercher une salle</label>
+                <div class="controles-recherche">
                     <input
                         id="recherche-salle"
-                        class="search-input"
+                        class="champ-recherche"
                         type="search"
                         placeholder="Ville, code postal..."
                         aria-describedby="resultat-recherche"
                     >
-                    <button id="search-button" class="search-button" type="button">Chercher</button>
+                    <button id="bouton-recherche" class="bouton-recherche" type="button">Chercher</button>
                 </div>
-                <p id="resultat-recherche" class="search-result">13 salles disponibles</p>
+                <p id="resultat-recherche" class="texte-resultat-recherche">13 salles disponibles</p>
             </div>
         </section>
 
-        <section class="page-section">
+        <section class="section-page">
             <div id="liste-salles" class="liste-clubs">
-                <article class="club-item" data-search="amiens 80080 somme cardio machines dury">
-                    <img class="club-image" src="../image/amiens.jpeg" alt="Salle Magic System Amiens">
-                    <div class="club-content">
-                        <p class="club-ville">AMIENS (80)</p>
+                <article class="carte-salle" data-recherche="amiens 80080 somme cardio machines dury">
+                    <img class="image-salle" src="../image/amiens.jpeg" alt="Salle Magic System Amiens">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">AMIENS (80)</p>
                         <h2>Magic System Amiens</h2>
-                        <p class="club-adresse">3 avenue Paul Claudel, 80480 Dury</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Amiens">Je m'inscris</a>
+                        <p class="adresse-salle">3 avenue Paul Claudel, 80480 Dury</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Amiens">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="angers 49100 saint-serge mail des presidents cardio gainage">
-                    <img class="club-image" src="../image/angers.jpeg" alt="Salle Magic System Angers Saint-Serge">
-                    <div class="club-content">
-                        <p class="club-ville">ANGERS SAINT-SERGE (49)</p>
+                <article class="carte-salle" data-recherche="angers 49100 saint-serge mail des presidents cardio gainage">
+                    <img class="image-salle" src="../image/angers.jpeg" alt="Salle Magic System Angers Saint-Serge">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">ANGERS SAINT-SERGE (49)</p>
                         <h2>Magic System Angers Saint-Serge</h2>
-                        <p class="club-adresse">Mail des Presidents, 9 Allee du President Chirac, 49100 Angers</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Angers%20Saint-Serge">Je m'inscris</a>
+                        <p class="adresse-salle">Mail des Presidents, 9 Allee du President Chirac, 49100 Angers</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Angers%20Saint-Serge">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="annecy 74000 centre gare haute-savoie premium">
-                    <img class="club-image" src="../image/annecy.jpeg" alt="Salle Magic System Annecy Centre">
-                    <div class="club-content">
-                        <p class="club-ville">ANNECY CENTRE (74)</p>
+                <article class="carte-salle" data-recherche="annecy 74000 centre gare haute-savoie premium">
+                    <img class="image-salle" src="../image/annecy.jpeg" alt="Salle Magic System Annecy Centre">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">ANNECY CENTRE (74)</p>
                         <h2>Magic System Annecy Centre</h2>
-                        <p class="club-adresse">15 rue de la Gare, 74000 Annecy</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Annecy%20Centre">Je m'inscris</a>
+                        <p class="adresse-salle">15 rue de la Gare, 74000 Annecy</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Annecy%20Centre">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="paris 75011 ile-de-france 24h house music">
-                    <img class="club-image" src="../image/paris.jpeg" alt="Salle Magic System Paris">
-                    <div class="club-content">
-                        <p class="club-ville">PARIS (75)</p>
+                <article class="carte-salle" data-recherche="paris 75011 ile-de-france 24h house music">
+                    <img class="image-salle" src="../image/paris.jpeg" alt="Salle Magic System Paris">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">PARIS (75)</p>
                         <h2>Magic System Paris</h2>
-                        <p class="club-adresse">12 rue du Sport, 75011 Paris</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Paris">Je m'inscris</a>
+                        <p class="adresse-salle">12 rue du Sport, 75011 Paris</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Paris">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="bordeaux 33000 nouvelle-aquitaine musculation coaching">
-                    <img class="club-image" src="../image/bordeaux.jpeg" alt="Salle Magic System Bordeaux">
-                    <div class="club-content">
-                        <p class="club-ville">BORDEAUX (33)</p>
+                <article class="carte-salle" data-recherche="bordeaux 33000 nouvelle-aquitaine musculation coaching">
+                    <img class="image-salle" src="../image/bordeaux.jpeg" alt="Salle Magic System Bordeaux">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">BORDEAUX (33)</p>
                         <h2>Magic System Bordeaux</h2>
-                        <p class="club-adresse">25 avenue de la Forme, 33000 Bordeaux</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Bordeaux">Je m'inscris</a>
+                        <p class="adresse-salle">25 avenue de la Forme, 33000 Bordeaux</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Bordeaux">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="lyon 69007 rhone performance cross training">
-                    <img class="club-image" src="../image/lyon.jpeg" alt="Salle Magic System Lyon">
-                    <div class="club-content">
-                        <p class="club-ville">LYON (69)</p>
+                <article class="carte-salle" data-recherche="lyon 69007 rhone performance cross training">
+                    <img class="image-salle" src="../image/lyon.jpeg" alt="Salle Magic System Lyon">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">LYON (69)</p>
                         <h2>Magic System Lyon</h2>
-                        <p class="club-adresse">44 quai de la Forme, 69007 Lyon</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Lyon">Je m'inscris</a>
+                        <p class="adresse-salle">44 quai de la Forme, 69007 Lyon</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Lyon">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="marseille 13006 paca boxe cardio">
-                    <img class="club-image" src="../image/marseille.jpeg" alt="Salle Magic System Marseille">
-                    <div class="club-content">
-                        <p class="club-ville">MARSEILLE (13)</p>
+                <article class="carte-salle" data-recherche="marseille 13006 paca boxe cardio">
+                    <img class="image-salle" src="../image/marseille.jpeg" alt="Salle Magic System Marseille">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">MARSEILLE (13)</p>
                         <h2>Magic System Marseille</h2>
-                        <p class="club-adresse">19 rue du Prado, 13006 Marseille</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Marseille">Je m'inscris</a>
+                        <p class="adresse-salle">19 rue du Prado, 13006 Marseille</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Marseille">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="lille 59000 nord hiit gainage">
-                    <img class="club-image" src="../image/lille.jpeg" alt="Salle Magic System Lille">
-                    <div class="club-content">
-                        <p class="club-ville">LILLE (59)</p>
+                <article class="carte-salle" data-recherche="lille 59000 nord hiit gainage">
+                    <img class="image-salle" src="../image/lille.jpeg" alt="Salle Magic System Lille">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">LILLE (59)</p>
                         <h2>Magic System Lille</h2>
-                        <p class="club-adresse">7 place Active, 59000 Lille</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Lille">Je m'inscris</a>
+                        <p class="adresse-salle">7 place Active, 59000 Lille</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Lille">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="nantes 44000 loire-atlantique yoga mobilite">
-                    <img class="club-image" src="../image/nantes.jpeg" alt="Salle Magic System Nantes">
-                    <div class="club-content">
-                        <p class="club-ville">NANTES (44)</p>
+                <article class="carte-salle" data-recherche="nantes 44000 loire-atlantique yoga mobilite">
+                    <img class="image-salle" src="../image/nantes.jpeg" alt="Salle Magic System Nantes">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">NANTES (44)</p>
                         <h2>Magic System Nantes</h2>
-                        <p class="club-adresse">31 boulevard Mouvement, 44000 Nantes</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Nantes">Je m'inscris</a>
+                        <p class="adresse-salle">31 boulevard Mouvement, 44000 Nantes</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Nantes">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="toulouse 31000 occitanie force halteres coaching">
-                    <img class="club-image" src="../image/toulouse.jpeg" alt="Salle Magic System Toulouse">
-                    <div class="club-content">
-                        <p class="club-ville">TOULOUSE (31)</p>
+                <article class="carte-salle" data-recherche="toulouse 31000 occitanie force halteres coaching">
+                    <img class="image-salle" src="../image/toulouse.jpeg" alt="Salle Magic System Toulouse">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">TOULOUSE (31)</p>
                         <h2>Magic System Toulouse</h2>
-                        <p class="club-adresse">63 rue Energie, 31000 Toulouse</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Toulouse">Je m'inscris</a>
+                        <p class="adresse-salle">63 rue Energie, 31000 Toulouse</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Toulouse">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="nice 06000 cote-d-azur cardio premium">
-                    <img class="club-image" src="../image/nice.jpeg" alt="Salle Magic System Nice">
-                    <div class="club-content">
-                        <p class="club-ville">NICE (06)</p>
+                <article class="carte-salle" data-recherche="nice 06000 cote-d-azur cardio premium">
+                    <img class="image-salle" src="../image/nice.jpeg" alt="Salle Magic System Nice">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">NICE (06)</p>
                         <h2>Magic System Nice</h2>
-                        <p class="club-adresse">15 avenue Azur, 06000 Nice</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Nice">Je m'inscris</a>
+                        <p class="adresse-salle">15 avenue Azur, 06000 Nice</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Nice">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="strasbourg 67000 alsace endurance rameur">
-                    <img class="club-image" src="../image/strasbourg.jpeg" alt="Salle Magic System Strasbourg">
-                    <div class="club-content">
-                        <p class="club-ville">STRASBOURG (67)</p>
+                <article class="carte-salle" data-recherche="strasbourg 67000 alsace endurance rameur">
+                    <img class="image-salle" src="../image/strasbourg.jpeg" alt="Salle Magic System Strasbourg">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">STRASBOURG (67)</p>
                         <h2>Magic System Strasbourg</h2>
-                        <p class="club-adresse">21 rue du Canal, 67000 Strasbourg</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Strasbourg">Je m'inscris</a>
+                        <p class="adresse-salle">21 rue du Canal, 67000 Strasbourg</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Strasbourg">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
 
-                <article class="club-item" data-search="montpellier 34000 herault cycling collectif">
-                    <img class="club-image" src="../image/montpellier.jpeg" alt="Salle Magic System Montpellier">
-                    <div class="club-content">
-                        <p class="club-ville">MONTPELLIER (34)</p>
+                <article class="carte-salle" data-recherche="montpellier 34000 herault cycling collectif">
+                    <img class="image-salle" src="../image/montpellier.jpeg" alt="Salle Magic System Montpellier">
+                    <div class="contenu-salle">
+                        <p class="ville-salle">MONTPELLIER (34)</p>
                         <h2>Magic System Montpellier</h2>
-                        <p class="club-adresse">52 place du Fitness, 34000 Montpellier</p>
-                        <div class="club-actions">
-                            <a class="btn-inscription" href="inscription.html?club=Magic%20System%20Montpellier">Je m'inscris</a>
+                        <p class="adresse-salle">52 place du Fitness, 34000 Montpellier</p>
+                        <div class="actions-salle">
+                            <a class="bouton-inscription" href="inscription.html?club=Magic%20System%20Montpellier">Je m'inscris</a>
                         </div>
                     </div>
                 </article>
             </div>
 
-            <p id="aucun-resultat" class="no-result" hidden>
+            <p id="aucun-resultat" class="texte-aucun-resultat" hidden>
                 Aucune salle ne correspond a cette recherche.
             </p>
         </section>
     </main>
 
     <footer id="contact">
-        <img class="footer-logo" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
-        <p>by Clement Sancier et Milo Ranoux</p>
-        <div class="footer-actions">
+        <img class="logo-pied-page" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
+        <p>par Clement Sancier et Milo Ranoux</p>
+        <div class="actions-pied-page">
             <a href="contact.html">En savoir plus</a>
-            <a class="footer-icon-link" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
-                <img class="instagram-icon" src="../image/instagramlogo.png" alt="Instagram">
+            <a class="lien-icone-pied-page" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
+                <img class="icone-instagram" src="../image/instagramlogo.png" alt="Instagram">
             </a>
-            <a class="footer-icon-link" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
-                <img class="mail-icon" src="../image/maillogo.png" alt="Mail">
+            <a class="lien-icone-pied-page" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
+                <img class="icone-mail" src="../image/maillogo.png" alt="Mail">
             </a>
         </div>
     </footer>

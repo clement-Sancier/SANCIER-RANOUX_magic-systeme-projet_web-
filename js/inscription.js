@@ -1,13 +1,51 @@
-const params = new URLSearchParams(window.location.search);
-const clubInput = document.getElementById("club");
-const abonnementInput = document.getElementById("abonnement");
-const selectedClub = params.get("club");
-const selectedAbonnement = params.get("abonnement");
+const parametresUrl = new URLSearchParams(window.location.search);
+const formulaire = document.querySelector(".formulaire-inscription");
+const champClub = document.getElementById("club");
+const champAbonnement = document.getElementById("abonnement");
+const messageFormulaire = document.getElementById("message-formulaire");
+const clubChoisi = parametresUrl.get("club");
+const abonnementChoisi = parametresUrl.get("abonnement");
 
-if (clubInput && selectedClub) {
-    clubInput.value = selectedClub;
+if (champClub && clubChoisi) {
+    champClub.value = clubChoisi;
 }
 
-if (abonnementInput && selectedAbonnement) {
-    abonnementInput.value = selectedAbonnement;
+if (champAbonnement && abonnementChoisi) {
+    champAbonnement.value = abonnementChoisi;
+}
+
+if (formulaire) {
+    const champsObligatoires = Array.from(formulaire.querySelectorAll("[required]"));
+
+    champsObligatoires.forEach((champ) => {
+        champ.addEventListener("input", () => {
+            if (messageFormulaire) {
+                messageFormulaire.textContent = "";
+            }
+        });
+        champ.addEventListener("change", () => {
+            if (messageFormulaire) {
+                messageFormulaire.textContent = "";
+            }
+        });
+    });
+
+    formulaire.addEventListener("submit", (evenement) => {
+        const champsVides = champsObligatoires.filter((champ) => champ.value.trim() === "");
+
+        if (champsVides.length > 0) {
+            evenement.preventDefault();
+
+            if (messageFormulaire) {
+                messageFormulaire.textContent = "Veuillez remplir les champs marques d'une *";
+            }
+
+            champsVides[0].focus();
+            return;
+        }
+
+        if (messageFormulaire) {
+            messageFormulaire.textContent = "";
+        }
+    });
 }

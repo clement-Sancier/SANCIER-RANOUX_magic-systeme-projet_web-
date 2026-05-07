@@ -11,21 +11,15 @@ body {
     line-height: 1.6;
 }
 
-.page-acceuil {
-    background: linear-gradient(180deg, #081a33 0%, #102b4d 55%, #14365d 100%);
+.page-accueil {
+    background: #0b1f38;
     color: aliceblue;
     position: relative;
     min-height: 100vh;
 }
 
-.background-image {
-    position: fixed;
-    inset: 0;
-    background-image: url("../image/salle.png");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.1;
-    z-index: 0;
+.image-fond {
+    display: none;
 }
 
 header,
@@ -58,7 +52,7 @@ header::after {
     flex-wrap: wrap;
 }
 
-.logo-link {
+.lien-logo {
     display: inline-flex;
     align-items: center;
     padding: 6px 10px 6px 0;
@@ -66,18 +60,18 @@ header::after {
     color: inherit;
 }
 
-.logo-zone {
+.zone-logo {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.logo-zone img {
+.zone-logo img {
     width: 126px;
     height: auto;
 }
 
-.logo-zone span {
+.zone-logo span {
     font-family: "Anton", Arial, sans-serif;
     font-size: 1.4rem;
     letter-spacing: 1px;
@@ -118,22 +112,22 @@ main {
     padding: 34px 20px 60px;
 }
 
-.intro-section {
+.section-introduction {
     margin-bottom: 52px;
 }
 
-.intro-grid {
+.grille-introduction {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(320px, 480px);
     align-items: center;
     gap: 40px;
 }
 
-.intro-copy {
+.texte-introduction {
     max-width: 520px;
 }
 
-.section-label {
+.etiquette-section {
     font-family: "Anton", Arial, sans-serif;
     font-size: 1rem;
     font-weight: normal;
@@ -143,7 +137,7 @@ main {
     color: #98cfff;
 }
 
-.intro-copy h1 {
+.texte-introduction h1 {
     font-family: "Anton", Arial, sans-serif;
     font-size: 4.4rem;
     font-weight: normal;
@@ -153,20 +147,20 @@ main {
     margin-bottom: 20px;
 }
 
-.intro-text {
+.texte-accroche {
     max-width: 480px;
     color: rgba(233, 244, 255, 0.92);
 }
 
-.action-buttons {
+.boutons-actions {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
     margin-top: 28px;
 }
 
-.btn-principal,
-.btn-secondaire {
+.bouton-principal,
+.bouton-secondaire {
     text-decoration: none;
     padding: 12px 20px;
     border-radius: 999px;
@@ -175,30 +169,30 @@ main {
     letter-spacing: 0.5px;
 }
 
-.btn-principal {
+.bouton-principal {
     background: aliceblue;
     color: #0f2d52;
 }
 
-.btn-secondaire {
+.bouton-secondaire {
     color: #0f2d52;
     background: rgba(240, 248, 255, 0.82);
 }
 
-.intro-visual {
+.visuel-introduction {
     border: 1px solid rgba(255, 255, 255, 0.28);
     background: rgba(240, 248, 255, 0.08);
     padding: 16px;
 }
 
-.intro-visual img {
+.visuel-introduction img {
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
-.home-highlights {
+.atouts-accueil {
     padding-bottom: 12px;
 }
 
@@ -216,7 +210,7 @@ main {
     border: 1px solid rgba(217, 236, 255, 0.9);
 }
 
-.highlight-icon {
+.icone-atout {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -242,7 +236,7 @@ footer {
     padding: 30px 20px;
 }
 
-.footer-logo {
+.logo-pied-page {
     width: 85px;
     height: auto;
     margin-bottom: 12px;
@@ -252,7 +246,7 @@ footer p {
     margin-bottom: 14px;
 }
 
-.footer-actions {
+.actions-pied-page {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -273,38 +267,38 @@ footer a {
     letter-spacing: 0.4px;
 }
 
-footer a.footer-icon-link {
+footer a.lien-icone-pied-page {
     background: transparent;
     padding: 0;
 }
 
-.instagram-icon,
-.mail-icon {
+.icone-instagram,
+.icone-mail {
     width: 42px;
     height: 42px;
     object-fit: cover;
     display: block;
 }
 
-.instagram-icon {
+.icone-instagram {
     border-radius: 8px;
 }
 
-.mail-icon {
+.icone-mail {
     width: 34px;
     height: 34px;
 }
 
 @media (max-width: 900px) {
-    .intro-grid {
+    .grille-introduction {
         grid-template-columns: 1fr;
     }
 
-    .intro-copy {
+    .texte-introduction {
         max-width: none;
     }
 
-    .intro-visual {
+    .visuel-introduction {
         max-width: 560px;
         width: 100%;
         margin: 0 auto;
@@ -329,19 +323,19 @@ footer a.footer-icon-link {
         justify-content: center;
     }
 
-    .intro-copy {
+    .texte-introduction {
         text-align: center;
     }
 
-    .intro-copy h1 {
+    .texte-introduction h1 {
         font-size: 2.9rem;
     }
 
-    .intro-text {
+    .texte-accroche {
         margin: 0 auto;
     }
 
-    .action-buttons {
+    .boutons-actions {
         justify-content: center;
     }
 

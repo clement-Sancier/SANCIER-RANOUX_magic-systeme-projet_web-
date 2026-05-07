@@ -1,10 +1,10 @@
-.contact-grid {
+.grille-contact {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
 }
 
-.contact-card {
+.carte-contact {
     overflow: hidden;
     border: 1px solid rgba(206, 223, 240, 0.85);
     border-radius: 10px;
@@ -12,22 +12,22 @@
     box-shadow: 0 12px 24px rgba(4, 17, 34, 0.12);
 }
 
-.contact-photo {
+.photo-contact {
     position: relative;
     min-height: 240px;
     background-image: linear-gradient(rgba(8, 26, 51, 0.22), rgba(8, 26, 51, 0.42)), url("../image/salle.png");
     background-size: cover;
 }
 
-.contact-photo-clement {
+.photo-contact-clement {
     background-position: center 35%;
 }
 
-.contact-photo-milo {
+.photo-contact-milo {
     background-position: center 60%;
 }
 
-.contact-badge {
+.pastille-contact {
     position: absolute;
     left: 24px;
     bottom: 24px;
@@ -45,12 +45,12 @@
     letter-spacing: 1px;
 }
 
-.contact-body {
+.contenu-contact {
     padding: 24px;
     color: #173554;
 }
 
-.contact-body h2 {
+.contenu-contact h2 {
     margin-bottom: 6px;
     font-family: "Anton", Arial, sans-serif;
     font-size: 2rem;
@@ -59,24 +59,24 @@
     letter-spacing: 0.3px;
 }
 
-.contact-subtitle {
+.sous-titre-contact {
     margin-bottom: 18px;
     color: #5c7390;
 }
 
-.contact-fields {
+.champs-contact {
     display: grid;
     gap: 12px;
 }
 
-.contact-field {
+.ligne-contact {
     padding: 14px 16px;
     border: 1px solid rgba(19, 47, 82, 0.12);
     border-radius: 8px;
     background: white;
 }
 
-.contact-field-label {
+.etiquette-ligne-contact {
     display: block;
     margin-bottom: 4px;
     font-family: "Anton", Arial, sans-serif;
@@ -86,18 +86,18 @@
     color: #6483a8;
 }
 
-.contact-field p {
+.ligne-contact p {
     color: #1a3452;
 }
 
-.contact-links {
+.liens-contact {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.contact-link {
+.lien-contact {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -111,13 +111,13 @@
     letter-spacing: 0.4px;
 }
 
-.contact-link-secondary {
+.lien-contact-secondaire {
     background: #d9ecff;
     color: #102b4d;
 }
 
 @media (max-width: 800px) {
-    .contact-grid {
+    .grille-contact {
         grid-template-columns: 1fr;
     }
 }

@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/inscription.css">
 </head>
 <body class="page-inscription">
-    <div class="background-image"></div>
+    <div class="image-fond"></div>
 
     <header>
         <div class="haut-page">
-            <a class="logo-link" href="acceuil.html" aria-label="Retour a l'accueil">
-                <div class="logo-zone">
+            <a class="lien-logo" href="acceuil.html" aria-label="Retour a l'accueil">
+                <div class="zone-logo">
                     <img src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
                     <span>MAGIC SYSTEM</span>
                 </div>
@@ -28,28 +28,28 @@
     </header>
 
     <main>
-        <section class="inscription-box">
-            <p class="section-label">Inscription</p>
+        <section class="bloc-inscription">
+            <p class="etiquette-section">Inscription</p>
             <h1>Rejoins Magic System</h1>
-            <p class="intro">
+            <p class="texte-intro">
                 Remplis ce formulaire pour demander ton inscription dans le club de ton choix.
             </p>
 
-            <form class="formulaire-inscription">
-                <label for="club">Club choisi</label>
-                <input id="club" name="club" type="text" placeholder="Exemple : Magic System Amiens">
+            <form class="formulaire-inscription" novalidate>
+                <label for="club">Club choisi *</label>
+                <input id="club" name="club" type="text" placeholder="Exemple : Magic System Amiens" required>
 
-                <label for="nom">Nom complet</label>
-                <input id="nom" name="nom" type="text" placeholder="Ton nom">
+                <label for="nom">Nom complet *</label>
+                <input id="nom" name="nom" type="text" placeholder="Ton nom" required>
 
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="tonmail@email.com">
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email" placeholder="tonmail@email.com" required>
 
-                <label for="telephone">Telephone</label>
-                <input id="telephone" name="telephone" type="tel" placeholder="06 00 00 00 00">
+                <label for="telephone">Telephone *</label>
+                <input id="telephone" name="telephone" type="tel" placeholder="06 00 00 00 00" required>
 
-                <label for="abonnement">Abonnement souhaite</label>
-                <select id="abonnement" name="abonnement">
+                <label for="abonnement">Abonnement souhaite *</label>
+                <select id="abonnement" name="abonnement" required>
                     <option value="">Choisir une formule</option>
                     <option>Starter</option>
                     <option>Standard</option>
@@ -59,21 +59,22 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Dis-nous si tu veux etre recontacte rapidement ou visiter une salle."></textarea>
 
+                <p id="message-formulaire" class="message-formulaire" aria-live="polite"></p>
                 <button type="submit">Envoyer ma demande</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <img class="footer-logo" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
-        <p>by Clement Sancier et Milo Ranoux</p>
-        <div class="footer-actions">
+        <img class="logo-pied-page" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
+        <p>par Clement Sancier et Milo Ranoux</p>
+        <div class="actions-pied-page">
             <a href="contact.html">En savoir plus</a>
-            <a class="footer-icon-link" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
-                <img class="instagram-icon" src="../image/instagramlogo.png" alt="Instagram">
+            <a class="lien-icone-pied-page" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
+                <img class="icone-instagram" src="../image/instagramlogo.png" alt="Instagram">
             </a>
-            <a class="footer-icon-link" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
-                <img class="mail-icon" src="../image/maillogo.png" alt="Mail">
+            <a class="lien-icone-pied-page" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
+                <img class="icone-mail" src="../image/maillogo.png" alt="Mail">
             </a>
         </div>
     </footer>

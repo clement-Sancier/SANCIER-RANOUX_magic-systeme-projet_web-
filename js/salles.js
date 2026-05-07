@@ -1,46 +1,46 @@
-const searchInput = document.getElementById("recherche-salle");
-const searchButton = document.getElementById("search-button");
-const cards = Array.from(document.querySelectorAll(".club-item"));
-const resultText = document.getElementById("resultat-recherche");
-const noResult = document.getElementById("aucun-resultat");
+const champRecherche = document.getElementById("recherche-salle");
+const boutonRecherche = document.getElementById("bouton-recherche");
+const cartesSalles = Array.from(document.querySelectorAll(".carte-salle"));
+const texteResultat = document.getElementById("resultat-recherche");
+const texteAucunResultat = document.getElementById("aucun-resultat");
 
-function normalizeText(text) {
-    return text
+function normaliserTexte(texte) {
+    return texte
         .toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .trim();
 }
 
-function updateResults() {
-    const query = normalizeText(searchInput.value);
-    let visibleCount = 0;
+function mettreAJourResultats() {
+    const recherche = normaliserTexte(champRecherche.value);
+    let nombreVisible = 0;
 
-    cards.forEach((card) => {
-        const searchText = normalizeText(card.dataset.search || "");
-        const matches = query === "" || searchText.includes(query);
+    cartesSalles.forEach((carte) => {
+        const texteRecherche = normaliserTexte(carte.dataset.recherche || "");
+        const correspond = recherche === "" || texteRecherche.includes(recherche);
 
-        card.hidden = !matches;
+        carte.hidden = !correspond;
 
-        if (matches) {
-            visibleCount += 1;
+        if (correspond) {
+            nombreVisible += 1;
         }
     });
 
-    resultText.textContent =
-        visibleCount > 1
-            ? visibleCount + " clubs disponibles"
-            : visibleCount === 1
+    texteResultat.textContent =
+        nombreVisible > 1
+            ? nombreVisible + " clubs disponibles"
+            : nombreVisible === 1
                 ? "1 club disponible"
                 : "0 club disponible";
 
-    noResult.hidden = visibleCount !== 0;
+    texteAucunResultat.hidden = nombreVisible !== 0;
 }
 
-searchInput.addEventListener("input", updateResults);
+champRecherche.addEventListener("input", mettreAJourResultats);
 
-if (searchButton) {
-    searchButton.addEventListener("click", updateResults);
+if (boutonRecherche) {
+    boutonRecherche.addEventListener("click", mettreAJourResultats);
 }
 
-updateResults();
+mettreAJourResultats();

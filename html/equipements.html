@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../css/equipements.css">
 </head>
 <body class="page-salles">
-    <div class="background-image"></div>
+    <div class="image-fond"></div>
     <header>
         <div class="haut-page">
-            <a class="logo-link" href="acceuil.html" aria-label="Retour a l'accueil">
-                <div class="logo-zone">
+            <a class="lien-logo" href="acceuil.html" aria-label="Retour a l'accueil">
+                <div class="zone-logo">
                     <img src="../image/logoMS.png" alt="Logo Magic System">
                     <span>MAGIC SYSTEM</span>
                 </div>
@@ -29,42 +29,53 @@
     </header>
 
     <main>
-        <section class="page-header">
-            <p class="section-label">Equipements</p>
+        <section class="entete-page">
+            <p class="etiquette-section">Equipements</p>
             <h1>Nos machines</h1>
-            <p>Un apercu simple des machines disponibles dans les salles Magic System avec leurs marques.</p>
+            <p>Un apercu simple des machines disponibles dans les salles Magic System avec leurs marques et leurs fonctionnalités.</p>
         </section>
 
-        <section class="equipements-gallery">
-            <article class="equipement-visual">
-                <img src="../image/lyon.jpeg" alt="Zone cardio Magic System">
-                <div class="equipement-visual-content">
-                    <h2>Zone cardio</h2>
-                    <p>Tapis, velos, rameurs et elliptique pour travailler l'endurance.</p>
-                </div>
-            </article>
+        <section class="galerie-equipements">
+            <button class="carte-zone filtre-zone zone-active" type="button" data-zone="toutes">
+                <img src="../image/salle.png" alt="Toutes les zones Magic System">
+                <span class="contenu-zone">
+                    <span class="titre-zone">Toutes les zones</span>
+                    <span class="texte-zone">Affiche l'ensemble des machines disponibles dans le club.</span>
+                </span>
+            </button>
 
-            <article class="equipement-visual">
-                <img src="../image/bordeaux.jpeg" alt="Zone musculation Magic System">
-                <div class="equipement-visual-content">
-                    <h2>Zone musculation</h2>
-                    <p>Machines guidees, poids libres et postes complets pour tout le corps.</p>
-                </div>
-            </article>
+            <button class="carte-zone filtre-zone" type="button" data-zone="cardio">
+                <img src="../image/cardio.jpg" alt="Zone cardio Magic System">
+                <span class="contenu-zone">
+                    <span class="titre-zone">Zone cardio</span>
+                    <span class="texte-zone">Tapis, velos, rameurs et elliptique pour travailler l'endurance.</span>
+                </span>
+            </button>
 
-            <article class="equipement-visual">
-                <img src="../image/paris.jpeg" alt="Zone libre Magic System">
-                <div class="equipement-visual-content">
-                    <h2>Zone libre</h2>
-                    <p>Un espace simple pour circuler, s'echauffer et enchaîner les exercices.</p>
-                </div>
-            </article>
+            <button class="carte-zone filtre-zone" type="button" data-zone="musculation">
+                <img src="../image/poidslibre.jpg" alt="Zone musculation Magic System">
+                <span class="contenu-zone">
+                    <span class="titre-zone">Zone musculation</span>
+                    <span class="texte-zone">Machines guidees, poids libres et postes complets pour tout le corps.</span>
+                </span>
+            </button>
+
+            <button class="carte-zone filtre-zone" type="button" data-zone="libre">
+                <img src="../image/c27ea4ce6e22f903f2f72cab30846a3a.jpg" alt="Zone libre Magic System">
+                <span class="contenu-zone">
+                    <span class="titre-zone">Zone libre</span>
+                    <span class="texte-zone">Un espace simple pour circuler, s'echauffer et enchaîner les exercices.</span>
+                </span>
+            </button>
         </section>
 
-        <section class="equipements-table-section">
-            <div class="table-card">
-                <div class="table-wrapper">
-                    <table class="equipements-table">
+        <section class="section-tableau-equipements">
+            <div class="entete-tableau-equipements">
+                <p id="statut-equipements" class="statut-equipements">Affichage : toutes les zones</p>
+            </div>
+            <div class="carte-tableau">
+                <div class="tableau-responsive">
+                    <table class="tableau-equipements">
                         <thead>
                             <tr>
                                 <th>Machine</th>
@@ -74,65 +85,137 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr data-zone="cardio">
                                 <td>Tapis de course</td>
                                 <td>Technogym</td>
                                 <td>Cardio</td>
                                 <td>Course et echauffement</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="cardio">
                                 <td>Velo assis</td>
                                 <td>Life Fitness</td>
                                 <td>Cardio</td>
                                 <td>Endurance douce</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="cardio">
+                                <td>Velo spinning</td>
+                                <td>Stages</td>
+                                <td>Cardio</td>
+                                <td>Travail d'intensite</td>
+                            </tr>
+                            <tr data-zone="cardio">
                                 <td>Rameur</td>
                                 <td>Concept2</td>
                                 <td>Cardio</td>
                                 <td>Travail complet du corps</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="cardio">
                                 <td>Elliptique</td>
                                 <td>Matrix</td>
                                 <td>Cardio</td>
                                 <td>Endurance sans impact</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="cardio">
+                                <td>Air bike</td>
+                                <td>Assault Fitness</td>
+                                <td>Cardio</td>
+                                <td>Fractionne et conditioning</td>
+                            </tr>
+                            <tr data-zone="cardio">
+                                <td>Stair climber</td>
+                                <td>Matrix</td>
+                                <td>Cardio</td>
+                                <td>Montee d'escaliers</td>
+                            </tr>
+                            <tr data-zone="musculation">
                                 <td>Presse a cuisses</td>
                                 <td>Hammer Strength</td>
                                 <td>Musculation</td>
                                 <td>Jambes et fessiers</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="musculation">
                                 <td>Smith machine</td>
                                 <td>Technogym</td>
                                 <td>Musculation</td>
                                 <td>Squat et developpe guide</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="musculation">
                                 <td>Poulie vis-a-vis</td>
                                 <td>Panatta</td>
                                 <td>Musculation</td>
                                 <td>Haut du corps et gainage</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="musculation">
                                 <td>Banc developpe couche</td>
                                 <td>Hammer Strength</td>
                                 <td>Musculation</td>
                                 <td>Pectoraux et triceps</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="musculation">
                                 <td>Leg extension</td>
                                 <td>Panatta</td>
                                 <td>Musculation</td>
                                 <td>Quadriceps</td>
                             </tr>
-                            <tr>
+                            <tr data-zone="musculation">
                                 <td>Machine a tirage vertical</td>
                                 <td>Life Fitness</td>
                                 <td>Musculation</td>
                                 <td>Dos et bras</td>
+                            </tr>
+                            <tr data-zone="musculation">
+                                <td>Chest press</td>
+                                <td>Technogym</td>
+                                <td>Musculation</td>
+                                <td>Pectoraux et epaules</td>
+                            </tr>
+                            <tr data-zone="musculation">
+                                <td>Leg curl allonge</td>
+                                <td>Panatta</td>
+                                <td>Musculation</td>
+                                <td>Ischio-jambiers</td>
+                            </tr>
+                            <tr data-zone="musculation">
+                                <td>Shoulder press</td>
+                                <td>Life Fitness</td>
+                                <td>Musculation</td>
+                                <td>Epaules et triceps</td>
+                            </tr>
+                            <tr data-zone="libre">
+                                <td>Halteres libres</td>
+                                <td>Eleiko</td>
+                                <td>Zone libre</td>
+                                <td>Travail libre et polyarticulaire</td>
+                            </tr>
+                            <tr data-zone="libre">
+                                <td>Kettlebells</td>
+                                <td>Jordan</td>
+                                <td>Zone libre</td>
+                                <td>Conditioning et gainage</td>
+                            </tr>
+                            <tr data-zone="libre">
+                                <td>Box plyometrique</td>
+                                <td>Escape Fitness</td>
+                                <td>Zone libre</td>
+                                <td>Sauts et explosivite</td>
+                            </tr>
+                            <tr data-zone="libre">
+                                <td>Battle rope</td>
+                                <td>Rogue</td>
+                                <td>Zone libre</td>
+                                <td>Cardio et puissance</td>
+                            </tr>
+                            <tr data-zone="libre">
+                                <td>Tapis de sol</td>
+                                <td>Domyos</td>
+                                <td>Zone libre</td>
+                                <td>Mobilite et abdominaux</td>
+                            </tr>
+                            <tr data-zone="libre">
+                                <td>Medecine ball</td>
+                                <td>TRX</td>
+                                <td>Zone libre</td>
+                                <td>Lancers et renforcement</td>
                             </tr>
                         </tbody>
                     </table>
@@ -142,17 +225,19 @@
     </main>
 
     <footer id="contact">
-        <img class="footer-logo" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
-        <p>by Clement Sancier et Milo Ranoux</p>
-        <div class="footer-actions">
+        <img class="logo-pied-page" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
+        <p>par Clement Sancier et Milo Ranoux</p>
+        <div class="actions-pied-page">
             <a href="contact.html">En savoir plus</a>
-            <a class="footer-icon-link" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
-                <img class="instagram-icon" src="../image/instagramlogo.png" alt="Instagram">
+            <a class="lien-icone-pied-page" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
+                <img class="icone-instagram" src="../image/instagramlogo.png" alt="Instagram">
             </a>
-            <a class="footer-icon-link" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
-                <img class="mail-icon" src="../image/maillogo.png" alt="Mail">
+            <a class="lien-icone-pied-page" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
+                <img class="icone-mail" src="../image/maillogo.png" alt="Mail">
             </a>
         </div>
     </footer>
+
+    <script src="../js/equipements.js"></script>
 </body>
 </html>
