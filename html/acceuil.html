@@ -111,6 +111,16 @@
             </div>
         </section>
     </main>
+    <section>
+        <h2>Chatbot</h2>
+
+        <div id="chat-box" style="height: 250px; border: 1px solid #ccc; overflow-y: scroll; background: #fff; margin-bottom: 50px; padding: 50px;">
+        </div>
+
+        <input type="text" id="user-input" placeholder="Posez votre question...">
+
+        <button type="button" onclick="fetchJSON('../json/intents.json')">Envoyer</button>
+    </section>
 
     <footer id="contact">
         <img class="logo-pied-page" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">

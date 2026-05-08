@@ -1,0 +1,45 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": ["Bonjour", "Salut", "Coucou"],
+      "responses": ["Bonjour ! Comment puis-je vous aider ?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Au revoir", "À bientôt", "À la prochaine"],
+      "responses": ["À bientôt ! N'hésitez pas si vous avez d'autres questions."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Merci", "Merci beaucoup", "Merci pour votre aide"],
+      "responses": ["De rien ! C'est un plaisir de vous aider."]
+    },
+    {
+      "tag": "machine_pec",
+      "patterns": ["quelle sont les machines pour les pecs ?", "quelles sont les machines pour les pecs ?", "quelles sont les machines pour les pectoraux ?","comment faire les pecs ?", "comment faire les pectoraux ?","salut comment je peux avoir des pecs aussi gros que milo ?"],
+      "responses": ["Il existe plusieurs machines pour travailler les pectoraux, telles que la Chest press , le Banc developpe couche , les Poulie vis-a-vis .Consultez la rubrique equipements pour plus de détail"]
+    },
+    {
+      "tag": "machine_biceps",
+      "patterns": ["quelle sont les machines pour les biceps ?", "quelles sont les machines pour les biceps ?", "comment faire les biceps ?","salut comment je peux avoir des biceps aussi gros que milo ?"],
+      "responses": ["Il existe plusieurs machines pour travailler les biceps, telles que les Halteres libres(Currl) , les poulies vis-a-vis .Consultez la rubrique equipements pour plus de détail" ]
+    },
+    {
+      "tag": "machine_dos",
+      "patterns": ["quelle sont les machines pour le dos ?", "comment muscler son dos ?" ,"comment ressembler a tortank?" ,"salut comment je peux avoir un dos aussi gros que tortank ?","ma copine m'as dit qu'elle me quitterais si j'avais pas un gros dos comment je peux faire ?"],
+      "responses": ["Il existe plusieurs machines pour travailler le dos , telles que Machine a tirage vertical , les Poulie vis-a-vis , les Halteres libres .Consultez la rubrique equipements pour plus de détail" ]
+    },
+    {
+      "tag": "machine_jambes",
+      "patterns": ["quelle sont les machines pour les jambes ?", "comment faire les jambes ?","salut comment je peux avoir des jambes aussi grosses que buldo ?"],
+      "responses": ["Il existe plusieurs machines pour travailler les jambes , telles que la Presse a cuisse , la Leg curl , la Leg extension .Consultez la rubrique equipements pour plus de détail" ]
+    },
+    {
+      "tag": "machine_epaule",
+      "patterns": ["quelle sont les machines pour les épaules ?", "comment faire les épaules ?","salut comment je peux avoir des épaules aussi grosses que buldo ?"],
+      "responses": ["désolé j'ai skip les jambes je ne connais pas les machines , Consulteez la rubrique equipement pour plus de detail" ]
+    }
+  ]
+}
+
