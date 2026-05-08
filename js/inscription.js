@@ -3,6 +3,7 @@ const formulaire = document.querySelector(".formulaire-inscription");
 const champClub = document.getElementById("club");
 const champAbonnement = document.getElementById("abonnement");
 const messageFormulaire = document.getElementById("message-formulaire");
+const boutonFermerMessage = document.getElementById("fermer-message-formulaire");
 const clubChoisi = parametresUrl.get("club");
 const abonnementChoisi = parametresUrl.get("abonnement");
 
@@ -17,16 +18,18 @@ if (champAbonnement && abonnementChoisi) {
 if (formulaire) {
     const champsObligatoires = Array.from(formulaire.querySelectorAll("[required]"));
 
+    function masquerMessage() {
+        if (messageFormulaire) {
+            messageFormulaire.hidden = true;
+        }
+    }
+
     champsObligatoires.forEach((champ) => {
         champ.addEventListener("input", () => {
-            if (messageFormulaire) {
-                messageFormulaire.textContent = "";
-            }
+            masquerMessage();
         });
         champ.addEventListener("change", () => {
-            if (messageFormulaire) {
-                messageFormulaire.textContent = "";
-            }
+            masquerMessage();
         });
     });
 
@@ -37,15 +40,21 @@ if (formulaire) {
             evenement.preventDefault();
 
             if (messageFormulaire) {
-                messageFormulaire.textContent = "Veuillez remplir les champs marques d'une *";
+                messageFormulaire.hidden = false;
             }
 
             champsVides[0].focus();
             return;
         }
 
+        masquerMessage();
+    });
+}
+
+if (boutonFermerMessage) {
+    boutonFermerMessage.addEventListener("click", () => {
         if (messageFormulaire) {
-            messageFormulaire.textContent = "";
+            messageFormulaire.hidden = true;
         }
     });
 }

@@ -59,7 +59,10 @@
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Dis-nous si tu veux etre recontacte rapidement ou visiter une salle."></textarea>
 
-                <p id="message-formulaire" class="message-formulaire" aria-live="polite"></p>
+                <div id="message-formulaire" class="message-formulaire" aria-live="polite" hidden>
+                    <span class="texte-message-formulaire">Remplissez tout les champs</span>
+                    <button id="fermer-message-formulaire" class="bouton-fermer-message" type="button">Fermer</button>
+                </div>
                 <button type="submit">Envoyer ma demande</button>
             </form>
         </section>

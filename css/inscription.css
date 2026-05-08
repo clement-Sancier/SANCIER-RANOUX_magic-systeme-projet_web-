@@ -53,6 +53,10 @@ header::after {
 }
 
 .lien-logo {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px 6px 0;
+    cursor: pointer;
     text-decoration: none;
     color: inherit;
 }
@@ -84,6 +88,7 @@ nav {
 nav a {
     font-family: "Anton", Arial, sans-serif;
     color: aliceblue;
+    cursor: pointer;
     text-decoration: none;
     letter-spacing: 0.5px;
 }
@@ -152,8 +157,28 @@ main {
 }
 
 .message-formulaire {
-    min-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 6px;
+    padding: 18px 18px 16px;
+    border-radius: 18px;
+    background: white;
+    color: #4c5663;
+    box-shadow: 0 12px 24px rgba(5, 14, 26, 0.18);
+}
+
+.texte-message-formulaire {
     font-size: 0.95rem;
+}
+
+.bouton-fermer-message {
+    border: none;
+    background: transparent;
+    color: #1677ff;
+    font-size: 0.95rem;
+    cursor: pointer;
 }
 
 .formulaire-inscription button {
@@ -171,8 +196,19 @@ main {
 }
 
 footer {
+    margin-top: 56px;
     text-align: center;
-    padding: 30px 20px;
+    padding: 34px 20px 30px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+footer::before {
+    content: "";
+    display: block;
+    width: min(100%, 860px);
+    height: 1px;
+    margin: 0 auto 26px;
+    background: rgba(255, 255, 255, 0.55);
 }
 
 .logo-pied-page {
@@ -197,6 +233,7 @@ footer a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     text-decoration: none;
     color: #0c2745;
     background: #d9ecff;
