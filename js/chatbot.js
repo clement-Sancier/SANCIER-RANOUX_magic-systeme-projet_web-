@@ -30,7 +30,7 @@ window.addEventListener('load', loadMessages);
 
 
 function sendMessage(intents) {
-    const inputElement = document.getElementById('user-input');
+    const inputElement = document.getElementById('réponse-ut');
     const messageUser = inputElement.value.trim();
     if (messageUser === "") return;
     showMessage(messageUser, 'user');
@@ -45,7 +45,7 @@ function sendMessage(intents) {
 function showMessage(message, type) {
     const chatBox = document.getElementById('chat-box');
     const messageElement = document.createElement('div');
-    messageElement.classList.add(type === 'user' ? 'user-message' : 'bot-message');
+    messageElement.classList.add(type === 'user' ? 'ut-message' : 'bot-message');
     messageElement.textContent = message;
     chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight;

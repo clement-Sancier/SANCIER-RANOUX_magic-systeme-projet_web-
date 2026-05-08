@@ -455,3 +455,51 @@ footer a.lien-icone-pied-page {
         padding: 30px 15px 50px;
     }
 }
+.ut-message {
+    background-color: #0f2d52;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px 10px 0 10px;
+    text-align: right;
+    align-self: flex-start;
+}
+
+.bot-message {
+    background-color: lightgrey;
+    color: #333;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px 10px 10px 0;
+    text-align: left;
+    align-self: flex-end;
+}
+
+.skibidi_chatbot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+#chat-box {
+    height: 200px;
+    width: 300px;
+    border: 1px solid #ccc;
+    overflow-y: auto;
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+tralala_ut {
+    display: flex;
+    width: 600px;
+    gap: 10px;
+}

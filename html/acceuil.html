@@ -111,15 +111,17 @@
             </div>
         </section>
     </main>
-    <section>
+    <section classe="skibidi_chatbot">
         <h2>Chatbot</h2>
 
-        <div id="chat-box" style="height: 250px; border: 1px solid #ccc; overflow-y: scroll; background: #fff; margin-bottom: 50px; padding: 50px;">
+        <div id="chat-box">
         </div>
+        <div id="tralala_ut">
 
-        <input type="text" id="user-input" placeholder="Posez votre question...">
+        <input type="text" id="réponse-ut" placeholder="Posez votre question...">
 
         <button type="button" onclick="fetchJSON('../json/intents.json')">Envoyer</button>
+        </div>
     </section>
 
     <footer id="contact">
@@ -135,5 +137,6 @@
             </a>
         </div>
     </footer>
+    <script src="../js/chatbot.js"></script>
 </body>
 </html>
