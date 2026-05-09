@@ -51,22 +51,29 @@
                 <label for="abonnement">Abonnement souhaite *</label>
                 <select id="abonnement" name="abonnement" required>
                     <option value="">Choisir une formule</option>
-                    <option>Starter</option>
+                    <option>Essentiel</option>
                     <option>Standard</option>
-                    <option>Elite</option>
+                    <option>Premium</option>
                 </select>
 
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Dis-nous si tu veux etre recontacte rapidement ou visiter une salle."></textarea>
-
-                <div id="message-formulaire" class="message-formulaire" aria-live="polite" hidden>
-                    <span class="texte-message-formulaire">Remplissez tout les champs</span>
-                    <button id="fermer-message-formulaire" class="bouton-fermer-message" type="button">Fermer</button>
-                </div>
                 <button type="submit">Envoyer ma demande</button>
             </form>
         </section>
     </main>
+
+    <div id="alerte-formulaire" class="alerte-formulaire" hidden>
+        <div class="message-formulaire" role="alertdialog" aria-modal="true" aria-labelledby="titre-message-formulaire">
+            <div class="contenu-message-formulaire">
+                <span id="titre-message-formulaire" class="titre-message-formulaire">Formulaire incomplet</span>
+                <span id="texte-message-formulaire" class="texte-message-formulaire">Veuillez remplir les champs marques d'une *</span>
+            </div>
+            <div class="pied-message-formulaire">
+                <button id="fermer-message-formulaire" class="bouton-fermer-message" type="button">Fermer</button>
+            </div>
+        </div>
+    </div>
 
     <a class="bouton-abonnement" href="chatbot.html">acceder au chatbot</a>
 

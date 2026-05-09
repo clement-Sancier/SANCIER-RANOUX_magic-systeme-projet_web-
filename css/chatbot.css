@@ -454,6 +454,15 @@ footer a.lien-icone-pied-page {
     main {
         padding: 30px 15px 50px;
     }
+
+    #tralala_ut {
+        flex-direction: column;
+    }
+
+    #boutton_ut_bot {
+        width: 100%;
+        min-height: 46px;
+    }
 }
 .ut-message {
     background-color: #0f2d52;
@@ -475,18 +484,22 @@ footer a.lien-icone-pied-page {
     align-self: flex-start;
 }
 
-.skibidi_chatbot{
+#skibidi_chatbot {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin-top: 50px;
+    width: min(100%, 840px);
+    margin: 0 auto;
+    padding: 40px 20px 10px;
+    text-align: center;
 }
 
 
 #chat-box {
     height: 400px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     border: 1px solid #ccc;
     overflow-y: auto;
     background: #fff;
@@ -499,8 +512,30 @@ footer a.lien-icone-pied-page {
 
 }
 
-.tralala_ut {
+#tralala_ut {
     display: flex;
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     gap: 10px;
+}
+
+#réponse-ut {
+    flex: 1;
+    min-height: 46px;
+    padding: 0 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#boutton_ut_bot {
+    min-width: 130px;
+    border: none;
+    border-radius: 6px;
+    background: #2f7dd1;
+    color: white;
+    font-family: "Anton", Arial, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    cursor: pointer;
 }

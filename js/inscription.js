@@ -13,13 +13,25 @@ let clubChoisi = parametresPage.get("club");
 let abonnementChoisi = parametresPage.get("abonnement");
 let viderFormulaireApresMessage = false;
 
+function corrigerNomAbonnement(abonnement) {
+    if (abonnement === "Starter") {
+        return "Essentiel";
+    }
+
+    if (abonnement === "Elite") {
+        return "Premium";
+    }
+
+    return abonnement;
+}
+
 function remplirChampsDepuisLien() {
     if (champClub !== null && clubChoisi !== null) {
         champClub.value = clubChoisi;
     }
 
     if (champAbonnement !== null && abonnementChoisi !== null) {
-        champAbonnement.value = abonnementChoisi;
+        champAbonnement.value = corrigerNomAbonnement(abonnementChoisi);
     }
 }
 
@@ -88,7 +100,7 @@ function envoyerFormulaire(evenement) {
 
     viderFormulaireApresMessage = true;
     afficherFenetre(
-        "Demande envoyée",
+        "Demande envoyee",
         "Votre demande a bien ete prise en compte. Nous vous recontacterons rapidement.",
         "OK"
     );
