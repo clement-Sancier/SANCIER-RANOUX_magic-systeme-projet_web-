@@ -15,16 +15,18 @@
 .photo-contact {
     position: relative;
     min-height: 240px;
-    background-image: linear-gradient(rgba(8, 26, 51, 0.22), rgba(8, 26, 51, 0.42)), url("../image/salle.png");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .photo-contact-clement {
-    background-position: center 35%;
+    background-image: linear-gradient(rgba(8, 26, 51, 0.18), rgba(8, 26, 51, 0.34)), url("../image/IMG_1700.jpg");
+    background-position: center 28%;
 }
 
 .photo-contact-milo {
-    background-position: center 60%;
+    background-image: linear-gradient(rgba(8, 26, 51, 0.18), rgba(8, 26, 51, 0.34)), url("../image/IMG_7498.jpg");
+    background-position: center 24%;
 }
 
 .pastille-contact {
