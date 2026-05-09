@@ -170,9 +170,6 @@ main {
 }
 
 .controles-recherche {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 170px;
-    gap: 10px;
     max-width: 760px;
     margin: 0 auto;
 }
@@ -185,18 +182,6 @@ main {
     font-size: 1rem;
     color: #111827;
     background: white;
-}
-
-.bouton-recherche {
-    min-height: 52px;
-    border: none;
-    border-radius: 0;
-    background: #05070b;
-    color: white;
-    font-family: "Anton", Arial, sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    cursor: pointer;
 }
 
 .texte-resultat-recherche {
@@ -283,13 +268,6 @@ main {
 
 .bouton-inscription:hover {
     background: #eff4f8;
-}
-
-.texte-aucun-resultat {
-    margin-top: 24px;
-    text-align: center;
-    font-weight: bold;
-    color: aliceblue;
 }
 
 footer {

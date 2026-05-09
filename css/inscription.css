@@ -156,21 +156,52 @@ main {
     background: #eef7ff;
 }
 
-.message-formulaire {
+.alerte-formulaire {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    margin-top: 6px;
-    padding: 18px 18px 16px;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(9, 14, 22, 0.34);
+}
+
+.alerte-formulaire[hidden] {
+    display: none;
+}
+
+.message-formulaire {
+    width: min(100%, 360px);
     border-radius: 18px;
     background: white;
     color: #4c5663;
-    box-shadow: 0 12px 24px rgba(5, 14, 26, 0.18);
+    box-shadow: 0 14px 30px rgba(5, 14, 26, 0.24);
+    overflow: hidden;
+}
+
+.contenu-message-formulaire {
+    padding: 18px 20px;
+}
+
+.titre-message-formulaire {
+    display: block;
+    margin-bottom: 6px;
+    color: #1a2d45;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 .texte-message-formulaire {
+    display: block;
     font-size: 0.95rem;
+}
+
+.pied-message-formulaire {
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 20px;
+    border-top: 1px solid rgba(12, 39, 69, 0.12);
 }
 
 .bouton-fermer-message {

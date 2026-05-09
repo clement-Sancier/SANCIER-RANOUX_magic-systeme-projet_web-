@@ -1,46 +1,47 @@
-const champRecherche = document.getElementById("recherche-salle");
-const boutonRecherche = document.getElementById("bouton-recherche");
-const cartesSalles = Array.from(document.querySelectorAll(".carte-salle"));
-const texteResultat = document.getElementById("resultat-recherche");
-const texteAucunResultat = document.getElementById("aucun-resultat");
+let champRecherche = document.getElementById("recherche-salle");
+let cartesSalles = document.querySelectorAll(".carte-salle");
+let texteResultat = document.getElementById("resultat-recherche");
 
 function normaliserTexte(texte) {
-    return texte
+    return (texte || "")
         .toLowerCase()
         .normalize("NFD")
         .replace(/[\u0300-\u036f]/g, "")
         .trim();
 }
 
-function mettreAJourResultats() {
-    const recherche = normaliserTexte(champRecherche.value);
-    let nombreVisible = 0;
+function rechercherSalles() {
+    if (champRecherche === null || texteResultat === null) {
+        return;
+    }
 
-    cartesSalles.forEach((carte) => {
-        const texteRecherche = normaliserTexte(carte.dataset.recherche || "");
-        const correspond = recherche === "" || texteRecherche.includes(recherche);
+    let recherche = normaliserTexte(champRecherche.value);
+    let nombreSallesTrouvees = 0;
 
-        carte.hidden = !correspond;
+    for (let i = 0; i < cartesSalles.length; i++) {
+        let texteSalle = normaliserTexte(cartesSalles[i].dataset.recherche);
 
-        if (correspond) {
-            nombreVisible += 1;
+        if (recherche === "" || texteSalle.includes(recherche)) {
+            cartesSalles[i].hidden = false;
+            nombreSallesTrouvees++;
+        } else {
+            cartesSalles[i].hidden = true;
         }
-    });
+    }
 
-    texteResultat.textContent =
-        nombreVisible > 1
-            ? nombreVisible + " clubs disponibles"
-            : nombreVisible === 1
-                ? "1 club disponible"
-                : "0 club disponible";
-
-    texteAucunResultat.hidden = nombreVisible !== 0;
+    if (recherche === "") {
+        texteResultat.textContent = nombreSallesTrouvees + " salles disponibles";
+    } else if (nombreSallesTrouvees > 1) {
+        texteResultat.textContent = nombreSallesTrouvees + " salles trouvees";
+    } else if (nombreSallesTrouvees === 1) {
+        texteResultat.textContent = "1 salle trouvee";
+    } else {
+        texteResultat.textContent = "0 salle trouvee";
+    }
 }
 
-champRecherche.addEventListener("input", mettreAJourResultats);
-
-if (boutonRecherche) {
-    boutonRecherche.addEventListener("click", mettreAJourResultats);
+if (champRecherche !== null) {
+    champRecherche.addEventListener("input", rechercherSalles);
 }
 
-mettreAJourResultats();
+rechercherSalles();
