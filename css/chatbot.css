@@ -490,7 +490,7 @@ footer a.lien-icone-pied-page {
     align-items: center;
     justify-content: center;
     width: min(100%, 840px);
-    margin: 0 auto;
+    margin: auto;
     padding: 40px 20px 10px;
     text-align: center;
 }
@@ -532,8 +532,8 @@ footer a.lien-icone-pied-page {
     min-width: 130px;
     border: none;
     border-radius: 6px;
-    background: #2f7dd1;
-    color: white;
+    background: aliceblue;
+    color: #0f2d52;
     font-family: "Anton", Arial, sans-serif;
     font-size: 1rem;
     letter-spacing: 0.4px;
