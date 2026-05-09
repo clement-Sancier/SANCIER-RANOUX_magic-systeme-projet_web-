@@ -106,6 +106,12 @@
     letter-spacing: 0.4px;
 }
 
+.lien-marque {
+    color: #173554;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .tableau-equipements tbody tr:nth-child(even) {
     background: rgba(217, 236, 255, 0.25);
 }
