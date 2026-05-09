@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chatbot</title>
+    <link rel="stylesheet" href="../css/chatbot.css">
+</head>
+<body class="page-accueil">
+
+
+<header>
+    <div class="haut-page">
+        <a class="lien-logo" href="acceuil.html" aria-label="Retour a l'accueil">
+            <div class="zone-logo">
+                <img src="../image/logoMS.png" alt="Logo de la salle Magic System">
+                <span>MAGIC SYSTEM</span>
+            </div>
+        </a>
+        <nav>
+            <a href="acceuil.html">Accueil</a>
+            <a href="equipements.html">Equipements</a>
+            <a href="salles.html">Salles</a>
+            <a href="abonnements.html">Abonnements</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <a class="bouton-abonnement" href="inscription.html">S'abonner</a>
+    </div>
+</header>
+
+
+<section classe="skibidi_chatbot">
+    <h2>Chatbot</h2>
+
+    <div id="chat-box">
+    </div>
+    <div id="tralala_ut">
+
+        <input type="text" id="réponse-ut" placeholder="Posez votre question...">
+
+        <button type="button" id="boutton_ut_bot" onclick="fetchJSON('../json/intents.json')">Envoyer</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<footer id="contact">
+    <img class="logo-pied-page" src="../image/logoMS.png" alt="Logo de la salle Magic Systeme">
+    <p>par Clement Sancier et Milo Ranoux</p>
+    <div class="actions-pied-page">
+        <a href="contact.html">En savoir plus</a>
+        <a class="lien-icone-pied-page" href="https://www.instagram.com/magicsystemgym/" target="_blank" rel="noreferrer" aria-label="Instagram Magic System Gym">
+            <img class="icone-instagram" src="../image/instagramlogo.png" alt="Instagram">
+        </a>
+        <a class="lien-icone-pied-page" href="mailto:contact@magicsysteme.fr" aria-label="Envoyer un mail a Magic System">
+            <img class="icone-mail" src="../image/maillogo.png" alt="Mail">
+        </a>
+    </div>
+</footer>
+<script src="../js/chatbot.js"></script>
+</body>
+</html>
+</body>
+</html>
