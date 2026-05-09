@@ -97,6 +97,7 @@ function envoyerFormulaire(evenement) {
         );
         return;
     }
+    alert("inscription réussite");
 
     viderFormulaireApresMessage = true;
     afficherFenetre(

@@ -117,7 +117,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
-    color: #98cfff;
+    color: aliceblue;
 }
 
 .bloc-inscription h1 {
@@ -207,7 +207,7 @@ main {
 .bouton-fermer-message {
     border: none;
     background: transparent;
-    color: #1677ff;
+    color: aliceblue;
     font-size: 0.95rem;
     cursor: pointer;
 }
@@ -217,8 +217,8 @@ main {
     min-height: 48px;
     border: none;
     border-radius: 6px;
-    background: #2f7dd1;
-    color: white;
+    background: aliceblue;
+    color: #0c2745;
     font-size: 1rem;
     font-family: "Anton", Arial, sans-serif;
     font-weight: normal;
@@ -338,4 +338,30 @@ footer a.lien-icone-pied-page {
     font-family: "Anton", Arial, sans-serif;
     font-weight: normal;
     letter-spacing: 0.5px;
+}
+
+.alerte-formulaire {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.message-formulaire {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    max-width: 100px;
+}
+
+.alerte-formulaire[hidden] {
+    display: none;
 }
