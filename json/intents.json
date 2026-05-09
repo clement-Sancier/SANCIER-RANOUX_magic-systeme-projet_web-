@@ -33,12 +33,12 @@
     {
       "tag": "machine_jambes",
       "patterns": ["quelle sont les machines pour les jambes ?", "comment faire les jambes ?","salut comment je peux avoir des jambes aussi grosses que buldo ?"],
-      "responses": ["Il existe plusieurs machines pour travailler les jambes , telles que la Presse a cuisse , la Leg curl , la Leg extension .Consultez la rubrique equipements pour plus de détail" ]
+      "responses": ["désolé j'ai skip les jambes je ne connais pas les machines , Consultez la rubrique equipement pour plus de detail" ]
     },
     {
       "tag": "machine_epaule",
       "patterns": ["quelle sont les machines pour les épaules ?", "comment faire les épaules ?","salut comment je peux avoir des épaules aussi grosses que buldo ?"],
-      "responses": ["désolé j'ai skip les jambes je ne connais pas les machines , Consulteez la rubrique equipement pour plus de detail" ]
+      "responses": ["Il exuiste plusieurs machines pour travailler les epaules" ]
     }
   ]
 }

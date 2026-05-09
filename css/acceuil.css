@@ -462,7 +462,7 @@ footer a.lien-icone-pied-page {
     margin: 5px;
     border-radius: 10px 10px 0 10px;
     text-align: right;
-    align-self: flex-start;
+    align-self: flex-end;
 }
 
 .bot-message {
@@ -472,12 +472,11 @@ footer a.lien-icone-pied-page {
     margin: 5px;
     border-radius: 10px 10px 10px 0;
     text-align: left;
-    align-self: flex-end;
+    align-self: flex-start;
 }
 
 .skibidi_chatbot{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -486,8 +485,8 @@ footer a.lien-icone-pied-page {
 
 
 #chat-box {
-    height: 200px;
-    width: 300px;
+    height: 400px;
+    width: 800px;
     border: 1px solid #ccc;
     overflow-y: auto;
     background: #fff;
@@ -496,7 +495,9 @@ footer a.lien-icone-pied-page {
     display: flex;
     flex-direction: column;
 }
+.bouton_ut_bot{
 
+}
 
 .tralala_ut {
     display: flex;
