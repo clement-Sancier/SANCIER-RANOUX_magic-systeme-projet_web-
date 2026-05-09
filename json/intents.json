@@ -39,7 +39,13 @@
       "tag": "machine_epaule",
       "patterns": ["quelle sont les machines pour les épaules ?", "comment faire les épaules ?","salut comment je peux avoir des épaules aussi grosses que buldo ?"],
       "responses": ["Il exuiste plusieurs machines pour travailler les epaules" ]
+    },
+    {
+      "tag": "abonnement",
+      "patterns": ["comment s'abonner ?", "quels sont les tarifs ?", "comment regarder les tarifs ?", "comment faire pour s'abonner ?","salut comment je peux m'abonner ?"],
+      "responses" :[ "pour vous abonner veuiller selectionner la rebrique abonnement , puis appuyer sur inscription , ensuite vous n'avez plus qu'a suivre les instructions pour finaliser votre abonnement" ]
     }
+
   ]
 }
 
