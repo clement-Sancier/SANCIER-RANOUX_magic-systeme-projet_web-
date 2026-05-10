@@ -364,7 +364,7 @@ footer a {
     cursor: pointer;
     text-decoration: none;
     color: #0f2d52;
-    background: lightsteelblue;
+    background: aliceblue;
     padding: 10px 16px;
     border-radius: 25px;
     font-family: "Anton", Arial, sans-serif;
@@ -475,8 +475,8 @@ footer a.lien-icone-pied-page {
 }
 
 .bot-message {
-    background-color: lightgrey;
-    color: #333;
+    background-color: aliceblue;
+    color: #0f2d52;
     padding: 10px;
     margin: 5px;
     border-radius: 10px 10px 10px 0;
@@ -500,9 +500,9 @@ footer a.lien-icone-pied-page {
     height: 400px;
     width: 100%;
     max-width: 800px;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(217, 236, 255, 0.45);
     overflow-y: auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.96);
     margin: 10px 0;
     padding: 10px;
     display: flex;
