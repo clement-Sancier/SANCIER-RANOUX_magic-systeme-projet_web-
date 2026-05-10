@@ -205,13 +205,13 @@ main {
 }
 
 .bouton-principal {
-    background: #cf2c1f;
-    color: white;
+    background: aliceblue;
+    color: #0f2d52;
 }
 
 .bouton-secondaire {
     color: #0f2d52;
-    background: rgba(255, 255, 255, 0.92);
+    background: aliceblue;
 }
 
 .visuel-introduction {
@@ -243,8 +243,8 @@ main {
     min-height: 190px;
     padding: 24px 22px 18px;
     border-radius: 18px;
-    border: 1px solid rgba(168, 204, 238, 0.35);
-    background: rgba(208, 229, 248, 0.92);
+    border: 1px solid aliceblue;
+    background: aliceblue;
     color: #0c2745;
     box-shadow: 0 14px 24px rgba(5, 14, 26, 0.16);
     overflow: visible;
@@ -258,8 +258,8 @@ main {
     height: 60px;
     margin-bottom: 16px;
     border-radius: 8px;
-    border: 1px solid rgba(15, 45, 82, 0.18);
-    background: rgba(217, 236, 255, 0.9);
+    border: 1px solid lightgrey;
+    background: lightsteelblue;
     font-family: "Anton", Arial, sans-serif;
     font-size: 1.25rem;
     color: #0f2d52;
@@ -305,12 +305,12 @@ main {
     padding: 28px 30px;
     border-radius: 16px;
     border: 1px solid rgba(169, 201, 233, 0.24);
-    background: rgba(255, 255, 255, 0.05);
+    background: white;
 }
 
 .bloc-description-salle p {
     margin-bottom: 14px;
-    color: rgba(233, 244, 255, 0.92);
+    color: aliceblue;
 }
 
 .bloc-description-salle .liste-description {
@@ -318,7 +318,7 @@ main {
 }
 
 .bloc-description-salle a {
-    color: #b8dcff;
+    color: aliceblue;
     text-decoration: underline;
     cursor: pointer;
 }

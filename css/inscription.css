@@ -94,7 +94,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #8fd3ff;
+    color: aliceblue;
 }
 
 main {
@@ -108,7 +108,8 @@ main {
     margin: 0 auto;
     padding: 30px;
     border-radius: 8px;
-    background: rgba(11, 31, 56, 0.5);
+    background: darkgrey;
+
     border: 1px solid rgba(143, 211, 255, 0.2);
 }
 
@@ -130,7 +131,7 @@ main {
 
 .texte-intro {
     margin-bottom: 26px;
-    color: #d9eaff;
+    color : aliceblue;
 }
 
 .formulaire-inscription {
@@ -153,7 +154,7 @@ main {
     border-radius: 6px;
     font-size: 1rem;
     color: #0c2745;
-    background: #eef7ff;
+    background: aliceblue;
 }
 
 .alerte-formulaire {
@@ -267,7 +268,7 @@ footer a {
     cursor: pointer;
     text-decoration: none;
     color: #0c2745;
-    background: #d9ecff;
+    background: aliceblue;
     padding: 10px 16px;
     border-radius: 25px;
     font-family: "Anton", Arial, sans-serif;
