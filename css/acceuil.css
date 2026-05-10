@@ -137,7 +137,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 14px;
-    color: #98cfff;
+    color: lightsteelblue;
 }
 
 .texte-introduction h1 {
@@ -153,7 +153,7 @@ main {
 .texte-accroche {
     max-width: 480px;
     margin-bottom: 24px;
-    color: rgba(233, 244, 255, 0.92);
+    color: aliceblue;
 }
 
 .ligne-info {
@@ -182,12 +182,12 @@ main {
     font-family: "Anton", Arial, sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.4px;
-    color: #d9ecff;
+    color: aliceblue;
 }
 
 .liste-description {
     padding-left: 22px;
-    color: rgba(233, 244, 255, 0.92);
+    color: aliceblue;
 }
 
 .liste-description li {
@@ -281,9 +281,9 @@ main {
     display: block;
     padding: 18px 16px;
     border-radius: 16px;
-    border: 1px solid rgba(164, 197, 228, 0.42);
-    background: rgba(242, 248, 255, 0.98);
-    color: #204264;
+    border: 1px solid lightsteelblue;
+    background: aliceblue;
+    color: #0f2d52;
     box-shadow: 0 14px 24px rgba(5, 14, 26, 0.16);
     opacity: 0;
     transform: translateY(-10px);
@@ -304,8 +304,8 @@ main {
     max-width: 920px;
     padding: 28px 30px;
     border-radius: 16px;
-    border: 1px solid rgba(169, 201, 233, 0.24);
-    background: white;
+    border: 1px solid aliceblue;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .bloc-description-salle p {
@@ -489,7 +489,7 @@ footer a.lien-icone-pied-page {
     width: 800px;
     border: 1px solid #ccc;
     overflow-y: auto;
-    background: #fff;
+    background: white;
     margin: 10px 0;
     padding: 10px;
     display: flex;

@@ -137,7 +137,7 @@ main {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 14px;
-    color: #98cfff;
+    color: lightsteelblue;
 }
 
 .texte-introduction h1 {
@@ -153,7 +153,7 @@ main {
 .texte-accroche {
     max-width: 480px;
     margin-bottom: 24px;
-    color: rgba(233, 244, 255, 0.92);
+    color: aliceblue;
 }
 
 .ligne-info {
@@ -182,12 +182,12 @@ main {
     font-family: "Anton", Arial, sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.4px;
-    color: #d9ecff;
+    color: aliceblue;
 }
 
 .liste-description {
     padding-left: 22px;
-    color: rgba(233, 244, 255, 0.92);
+    color: aliceblue;
 }
 
 .liste-description li {
@@ -202,16 +202,6 @@ main {
     font-family: "Anton", Arial, sans-serif;
     font-weight: normal;
     letter-spacing: 0.5px;
-}
-
-.bouton-principal {
-    background: #cf2c1f;
-    color: white;
-}
-
-.bouton-secondaire {
-    color: #0f2d52;
-    background: rgba(255, 255, 255, 0.92);
 }
 
 .visuel-introduction {
@@ -238,17 +228,7 @@ main {
     align-items: start;
 }
 
-.bloc-accueil {
-    position: relative;
-    min-height: 190px;
-    padding: 24px 22px 18px;
-    border-radius: 18px;
-    border: 1px solid rgba(168, 204, 238, 0.35);
-    background: rgba(208, 229, 248, 0.92);
-    color: #0c2745;
-    box-shadow: 0 14px 24px rgba(5, 14, 26, 0.16);
-    overflow: visible;
-}
+
 
 .icone-atout {
     display: inline-flex;
@@ -259,7 +239,7 @@ main {
     margin-bottom: 16px;
     border-radius: 8px;
     border: 1px solid rgba(15, 45, 82, 0.18);
-    background: rgba(217, 236, 255, 0.9);
+    background: lightsteelblue;
     font-family: "Anton", Arial, sans-serif;
     font-size: 1.25rem;
     color: #0f2d52;
@@ -273,23 +253,6 @@ main {
     letter-spacing: 0.5px;
 }
 
-.bloc-accueil p {
-    position: absolute;
-    top: 96px;
-    left: 22px;
-    right: 22px;
-    display: block;
-    padding: 18px 16px;
-    border-radius: 16px;
-    border: 1px solid rgba(164, 197, 228, 0.42);
-    background: rgba(242, 248, 255, 0.98);
-    color: #204264;
-    box-shadow: 0 14px 24px rgba(5, 14, 26, 0.16);
-    opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
 
 .bloc-accueil:hover p {
     opacity: 1;
@@ -317,11 +280,7 @@ main {
     margin: 8px 0 14px;
 }
 
-.bloc-description-salle a {
-    color: #b8dcff;
-    text-decoration: underline;
-    cursor: pointer;
-}
+
 
 footer {
     margin-top: 56px;
